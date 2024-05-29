@@ -48,6 +48,10 @@ var bannerSwiper= new Swiper(".bannerSwiper", {
     delay: 5500,
     disableOnInteraction: false,
   },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
 var teamSwiper= new Swiper(".teamSwiper", {
   loop: true,
