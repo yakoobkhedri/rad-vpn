@@ -197,6 +197,9 @@ a {
     text-decoration: none;
     transition: all .4s;
 }
+.cursor-pointer{
+    cursor: pointer;
+}
 .text-justify{
     text-align: justify;
 }
@@ -289,14 +292,9 @@ header ul ul li:last-child a {
 
 @media only screen and (max-width:1200px) {
 
-    .right-86 {
-        right: 0;
-    }
-    .shadow-xl-0,
-    header ul li ul {
-        box-shadow: none !important;
-    }
+}
 
+@media only screen and (max-width:992px) { 
     header #menuOverlay {
         position: fixed;
         inset: 0;
@@ -306,105 +304,48 @@ header ul ul li:last-child a {
         transition: all .4s;
         display: block;
     }
-
+    
     header #menuOverlay.active {
         max-height: 100%;
     }
-
-    header .menu {
-        position: fixed;
-        background: #171a1e;
-        top: 0;
-        bottom: 0;
-        right: -1400px;
-        width: 40%;
-        line-height: 51px;
-        overflow-y: auto;
-        transition: all 1.3s;
+    .menu{
+    position: fixed;
+    right: -270px;
+    background: white;
+    top: 0;
+    bottom: 0;
+    padding: 31px !important;
+    padding-top: 6px!important;
+    width: 240px;
+    transition: all .4s;
     }
-
-    header .menu.active {
+    .menu.active{
         right: 0;
-        width: 100%;
     }
-
-    header a {
-        color: white !important;
+    .swiper-button-next {
+      right: 14px;
     }
-
-    header a:hover,
-    header a.active {
-        color: #696CFF !important;
+    .swiper-button-prev{
+        left: 14px;
     }
-
-    header .menu>li {
-        border-bottom: 1px solid #313642;
-        padding: 0 12px;
-    }
-
-    header .menu>ul>li {
-        border-bottom: 1px solid #313642 !important;
-    }
-
-    header .menu>ul>li:last-child,
-    header .menu>ul>li:first-child {
-        border-bottom: none !important;
-    }
-
-    header ul ul a {
-        border-bottom: 1px solid #313642 !important;
-    }
-
-    header ul ul li:last-child a {
-        border-bottom: none !important;
-    }
-
-    header .menu>li a.mobileactive {
-        color: #f17732 !important;
-    }
-
-    header ul ul::before {
-        display: none;
-    }
-
-    header ul ul {
-        position: static !important;
-        opacity: 100%;
-        visibility: visible;
-        max-height: 0;
-        overflow: hidden;
-        transition: all .4s;
-    }
-
-    header ul ul.active {
-        max-height: 1000px;
-    }
-
-    header .menu svg {
-        transition: all .4s;
-    }
-
-    header .menu svg.active {
-        transform: rotate(180deg);
-    }
-
-    header ul ul div {
-        background-color: transparent !important;
-    }
-
-    header ul ul a {
-        color: white !important;
+    .h-lg-auto{
+        height: auto!important;
     }
 }
 
-@media only screen and (max-width:992px) {
-   
+@media only screen and (max-width:768px) {
 }
-
-@media only screen and (max-width:768px) {}
 
 @media only screen and (max-width:576px) {
-   
+    .fs-sm-10{
+        font-size: 10px;
+       }
+       .fs-sm-12{
+        font-size: 12px;
+       }
+   .fs-sm-15{
+    font-size: 15px;
+   }
 }
 
 @media only screen and (max-width:435px) {
