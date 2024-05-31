@@ -32,6 +32,9 @@ body {
 .text-main2{
     color: #355F8F;
 }
+.text-gray{
+    color: #697A8D;
+}
 /* cursor */
 .cursor {
     cursor: pointer;
@@ -286,6 +289,14 @@ header ul ul li:last-child a {
     background-position: center;
     background-repeat: no-repeat;
     margin-top: -124px;
+}
+/* aside */
+aside{
+    width: 260px;
+    background-color: white;
+    height: 100vh;
+    flex-shrink: 0;
+    box-shadow: -5px 5px 6px 1px #696CFF38;
 }
 /* responsive */
 @media only screen and (max-width:1400px) {}
