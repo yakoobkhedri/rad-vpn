@@ -102,21 +102,39 @@ body {
 .shadow-main {
     box-shadow: 0px 0px 6px 0px #696CFF!important;
 }
-
+.shadow-main2{
+    box-shadow: 0px 0px 6px 0px #000000!important;
+}
 /* max width */
 .max-w-100 {
     max-width: 100%;
+    width: 100%;
+}
+.max-w-885{
+    max-width: 885px;
     width: 100%;
 }
 /* width */
 .w-16 {
     width: 16px !important;
 }
+.w-18 {
+    width: 18px !important;
+}
 .w-33 {
     width: 33px !important;
 }
+.w-35 {
+    width: 35px !important;
+}
+.w-42 {
+    width: 42px !important;
+}
 .w-121 {
     width: 121px !important;
+}
+.w-175 {
+    width: 175px !important;
 }
 .w-203 {
     width: 203px !important;
@@ -125,11 +143,23 @@ body {
 .h-16 {
     height: 16px !important;
 }
+.h-18 {
+    height: 18px !important;
+}
+.h-28 {
+    height: 28px !important;
+}
 .h-33 {
     height: 33px !important;
 }
 .h-34 {
     height: 34px !important;
+}
+.h-35 {
+    height: 35px !important;
+}
+.h-42 {
+    height: 42px !important;
 }
 .h-45 {
     height: 45px !important;
@@ -157,7 +187,9 @@ body {
 .rounded-6{
     border-radius: 6px;
 }
-
+.rounded-8{
+    border-radius: 8px;
+}
 /* bottom */
 .-bottom-21 {
     bottom: -21px;
@@ -165,6 +197,9 @@ body {
 /* top */
 .-top-3 {
     top: -3px;
+}
+.-top-4 {
+    top: -4px;
 }
 /* left */
 .-left-16 {
@@ -174,6 +209,9 @@ body {
     left: -27px;
 }
 /* right */
+.-right-9 {
+    right: -9px;
+}
 .right-15 {
     right: 15px;
 }
@@ -223,7 +261,7 @@ header {
     font-size: 14px;
 }
 
-header #menuOverlay {
+#menuOverlay {
     display: none;
 }
 
@@ -303,6 +341,7 @@ aside{
     height: 100vh;
     flex-shrink: 0;
     box-shadow: -5px 5px 6px 1px #696CFF38;
+    z-index: 10;
 }
 aside ul li:hover svg,aside ul li.active svg{
     opacity: 100%;
@@ -334,7 +373,7 @@ aside ul li a:hover,aside ul li:hover div,aside ul li a.active,aside ul li.activ
 }
 
 @media only screen and (max-width:992px) { 
-    header #menuOverlay {
+    #menuOverlay {
         position: fixed;
         inset: 0;
         background-color: #000;
@@ -342,9 +381,10 @@ aside ul li a:hover,aside ul li:hover div,aside ul li a.active,aside ul li.activ
         max-height: 0;
         transition: all .4s;
         display: block;
+        z-index: 9;
     }
     
-    header #menuOverlay.active {
+    #menuOverlay.active {
         max-height: 100%;
     }
     .menu{
@@ -357,6 +397,7 @@ aside ul li a:hover,aside ul li:hover div,aside ul li a.active,aside ul li.activ
     padding-top: 6px!important;
     width: 240px;
     transition: all .4s;
+    z-index: 999;
     }
     .menu.active{
         right: 0;
@@ -373,6 +414,17 @@ aside ul li a:hover,aside ul li:hover div,aside ul li a.active,aside ul li.activ
 }
 
 @media only screen and (max-width:768px) {
+    aside{
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        transition: all .4s ease-in-out;
+    }
+    aside.active{
+        right: 0;
+    }
 }
 
 @media only screen and (max-width:576px) {

@@ -6,7 +6,6 @@ let li=Array.from(document.querySelectorAll('header .menu  > ul > li'));
 
 document.getElementById('hamicon').addEventListener('click',function () {
   menu.classList.add('active');
-  document.getElementById('hamicon').classList.add('active');
   document.getElementById('menuOverlay').classList.add('active');
   document.getElementById('menuOverlay').addEventListener('click',function () {
     this.classList.remove('active');
