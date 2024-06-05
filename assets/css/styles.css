@@ -136,6 +136,9 @@ body {
 .w-175 {
     width: 175px !important;
 }
+.w-184 {
+    width: 184px !important;
+}
 .w-203 {
     width: 203px !important;
 }
@@ -182,6 +185,9 @@ body {
 /* border */
 .border-main-2 {
     border: 2px solid #696CFF;
+}
+.border-b-main-2{
+    border-bottom: 2px solid #696CFF;
 }
 .border-main-3{
     border: 3px solid #696CFF;
@@ -446,8 +452,14 @@ aside ul li a:hover,aside ul li:hover div,aside ul li.active > a,aside ul li.act
        .fs-sm-12{
         font-size: 12px;
        }
+       .fs-sm-14{
+        font-size: 14px;
+       }
    .fs-sm-15{
     font-size: 15px;
+   }
+   .w-sm-99{
+    width: 99px!important;
    }
 }
 
