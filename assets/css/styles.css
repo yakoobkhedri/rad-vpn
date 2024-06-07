@@ -22,6 +22,9 @@ body {
 .bg-main {
     background-color: #696CFF;
 }
+.bg-main2{
+    background-color: #F3F3F9;
+}
 .bg-purple{
     background-color: #8500C1;
 }
@@ -110,6 +113,10 @@ body {
     max-width: 100%;
     width: 100%;
 }
+.max-w-470{
+    max-width: 470px;
+    width: 100%;
+}
 .max-w-885{
     max-width: 885px;
     width: 100%;
@@ -167,6 +174,9 @@ body {
 .h-45 {
     height: 45px !important;
 }
+.h-51 {
+    height: 51px !important;
+}
 .h-55 {
     height: 55px !important;
 }
@@ -183,6 +193,9 @@ body {
     height: 100vh;
 }
 /* border */
+.border-main-1 {
+    border: 1px solid #696CFF;
+}
 .border-main-2 {
     border: 2px solid #696CFF;
 }
@@ -457,6 +470,9 @@ aside ul li a:hover,aside ul li:hover div,aside ul li.active > a,aside ul li.act
        }
    .fs-sm-15{
     font-size: 15px;
+   }
+   .w-sm-100{
+    width: 100%!important;
    }
    .w-sm-99{
     width: 99px!important;
