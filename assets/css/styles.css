@@ -117,6 +117,10 @@ body {
     max-width: 470px;
     width: 100%;
 }
+.max-w-657{
+    max-width: 657px;
+    width: 100%;
+}
 .max-w-885{
     max-width: 885px;
     width: 100%;
@@ -198,6 +202,9 @@ body {
 }
 .border-main-2 {
     border: 2px solid #696CFF;
+}
+.border-b-main-1{
+    border-bottom: 1px solid #696CFF;
 }
 .border-b-main-2{
     border-bottom: 2px solid #696CFF;
