@@ -141,6 +141,9 @@ body {
 .w-42 {
     width: 42px !important;
 }
+.w-104 {
+    width: 104px !important;
+}
 .w-121 {
     width: 121px !important;
 }
@@ -153,12 +156,18 @@ body {
 .w-203 {
     width: 203px !important;
 }
+.w-299 {
+    width: 299px !important;
+}
 /* height */
 .h-16 {
     height: 16px !important;
 }
 .h-18 {
     height: 18px !important;
+}
+.h-22 {
+    height: 22px !important;
 }
 .h-28 {
     height: 28px !important;
