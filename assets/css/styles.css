@@ -108,6 +108,10 @@ body {
 .shadow-main2{
     box-shadow: 0px 0px 6px 0px #000000!important;
 }
+/* margin */
+.mb-15{
+    margin-bottom: 15px;
+}
 /* max width */
 .max-w-100 {
     max-width: 100%;
@@ -386,6 +390,7 @@ aside{
     flex-shrink: 0;
     box-shadow: -5px 5px 6px 1px #696CFF38;
     z-index: 10;
+    overflow-y: auto;
 }
 aside ul li{
    margin-bottom: 12px;
@@ -471,6 +476,9 @@ aside ul li a:hover,aside ul li:hover div,aside ul li.active > a,aside ul li.act
     }
     aside.active{
         right: 0;
+    }
+    .dashboardContent{
+        overflow: visible!important;
     }
 }
 

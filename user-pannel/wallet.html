@@ -11,6 +11,35 @@
 
 <body>
 
+     <!-- description modal -->
+     <div class="modal fade" id="description" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-5 shadow-main">
+                <div class="modal-header border-0 pb-0 d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                    <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.16" fill-rule="evenodd" clip-rule="evenodd" d="M4 0C1.7944 0 0 1.9389 0 4.32212C0 6.70533 1.7944 8.64423 4 8.64423C6.2056 8.64423 8 6.70533 8 4.32212C8 1.9389 6.2056 0 4 0Z" fill="#696CFF"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4 2.16113C2.8972 2.16113 2 3.13058 2 4.32219C2 5.5138 2.8972 6.48325 4 6.48325C5.1028 6.48325 6 5.5138 6 4.32219C6 3.13058 5.1028 2.16113 4 2.16113Z" fill="#696CFF"/>
+                    </svg>
+                    <p class="mb-0 fw-bold fs-12 text-main2">توضیحات</p>
+                    </div>
+                    <svg class="cursor-pointer mb-15" data-bs-dismiss="modal" aria-label="Close" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM4.29289 13.7071C3.90237 13.3166 3.90237 12.6834 4.29289 12.2929L7.58579 9L4.29289 5.70711C3.90237 5.31658 3.90237 4.68342 4.29289 4.29289C4.68342 3.90237 5.31658 3.90237 5.70711 4.29289L9 7.58579L12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289C14.0976 4.68342 14.0976 5.31658 13.7071 5.70711L10.4142 9L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L9 10.4142L5.70711 13.7071C5.31658 14.0976 4.68342 14.0976 4.29289 13.7071Z" fill="#696CFF"/>
+                    </svg>
+                </div>
+                <div class="modal-body border-0 fs-12 pt-0">
+                    <p class="mb-0 text-dark">
+                        جهت خرید سرویس و یا مشاهده گزارش های مالی می توانید گزینه مورد نظر را از منو انتخاب کنید.
+                      </p>
+                      <p class="text-dark">
+                        جهت شارژ کیف پول مبلغ مورد نظر را به <span class="text-main">شماره کارت6104337352859910 به نام پارسا فانی اصفهانی</span> کارت به کارت کرده<br>
+                        و سپس عکس رسید را به همراه مبلغ مورد ارسال نمایید.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- menu overlay -->
     <div id="menuOverlay"></div>
 
@@ -132,7 +161,7 @@
                 </li>
             </ul>
         </aside>
-        <div class="flex-grow-1 bg-white h-100vh overflow-auto">
+        <div class="flex-grow-1 bg-white h-100vh overflow-auto dashboardContent">
             <div class="p-md-4">
                 <form
                     class="rounded-6 shadow-sm py-3 px-lg-5 px-4 d-flex align-items-center justify-content-between gap-3">
@@ -186,12 +215,15 @@
                             <path d="M24 14.5L1 14.5" stroke="#696CFF" stroke-width="2" stroke-linecap="round" />
                         </svg>
                     </div>
-                    <div>
+                    <div class="d-flex align-items-center gap-3">
+                        <svg data-bs-toggle="modal" data-bs-target="#description" class="cursor-pointer" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 15C10 15.5523 9.55229 16 9 16C8.44771 16 8 15.5523 8 15C8 14.4477 8.44771 14 9 14C9.55229 14 10 14.4477 10 15ZM9 2C6.79086 2 5 3.79086 5 6H7C7 4.89543 7.89543 4 9 4H9.09431C10.1468 4 11 4.85321 11 5.90569V6.41886C11 6.93267 10.6712 7.38884 10.1838 7.55132C8.87964 7.98603 8 9.20647 8 10.5811V13H10V10.5811C10 10.0673 10.3288 9.61116 10.8162 9.44868C12.1204 9.01397 13 7.79353 13 6.41886V5.90569C13 3.74864 11.2514 2 9.09431 2H9Z" fill="#696CFF"/>
+                        </svg>
                         <img alt="img" src="../assets/img/Icon.svg" class="img-fluid cursor-pointer">
                     </div>
                 </div>
                 <div>
-                    <div class="rounded-6 d-none d-sm-block shadow-sm py-3 px-lg-5 px-4 mb-4 mt-4 mt-md-0">
+                    <div class="rounded-6 d-none d-md-block shadow-sm py-3 px-lg-5 px-4 mb-4 mt-4 mt-md-0">
                       <div class="d-flex align-items-center gap-2 mb-3">
                         <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path opacity="0.16" fill-rule="evenodd" clip-rule="evenodd" d="M6 0C2.6916 0 0 2.90835 0 6.48317C0 10.058 2.6916 12.9663 6 12.9663C9.3084 12.9663 12 10.058 12 6.48317C12 2.90835 9.3084 0 6 0Z" fill="#696CFF"/>

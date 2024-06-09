@@ -11,6 +11,70 @@
 
 <body>
 
+    <!-- description modal -->
+    <div class="modal fade" id="description" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-5 shadow-main">
+                <div class="modal-header border-0 pb-0 d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.16" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4 0C1.7944 0 0 1.9389 0 4.32212C0 6.70533 1.7944 8.64423 4 8.64423C6.2056 8.64423 8 6.70533 8 4.32212C8 1.9389 6.2056 0 4 0Z"
+                                fill="#696CFF" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4 2.16113C2.8972 2.16113 2 3.13058 2 4.32219C2 5.5138 2.8972 6.48325 4 6.48325C5.1028 6.48325 6 5.5138 6 4.32219C6 3.13058 5.1028 2.16113 4 2.16113Z"
+                                fill="#696CFF" />
+                        </svg>
+                        <p class="mb-0 fw-bold fs-12 text-main2">توضیحات</p>
+                    </div>
+                    <svg class="cursor-pointer mb-15" data-bs-dismiss="modal" aria-label="Close" width="18" height="18"
+                        viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM4.29289 13.7071C3.90237 13.3166 3.90237 12.6834 4.29289 12.2929L7.58579 9L4.29289 5.70711C3.90237 5.31658 3.90237 4.68342 4.29289 4.29289C4.68342 3.90237 5.31658 3.90237 5.70711 4.29289L9 7.58579L12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289C14.0976 4.68342 14.0976 5.31658 13.7071 5.70711L10.4142 9L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L9 10.4142L5.70711 13.7071C5.31658 14.0976 4.68342 14.0976 4.29289 13.7071Z"
+                            fill="#696CFF" />
+                    </svg>
+                </div>
+                <div class="modal-body border-0 fs-12 pt-0">
+                    <p class="mb-0 text-dark">
+                        لطفا در صورت داشتن کد تخفیف آن را در قسمت مورد نظر اعمال نمایید.
+                    </p>
+                    <p class="text-dark">
+                        در خرید سرویس های مورد نظر دقت کنید . سرویس خریداری شده برگردانده نخواهد شد
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- more modal -->
+    <div class="modal fade" id="more" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-5 shadow-main">
+                <div class="modal-header border-0 pb-0">
+                    <svg class="cursor-pointer" data-bs-dismiss="modal" aria-label="Close" width="18" height="18"
+                        viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM4.29289 13.7071C3.90237 13.3166 3.90237 12.6834 4.29289 12.2929L7.58579 9L4.29289 5.70711C3.90237 5.31658 3.90237 4.68342 4.29289 4.29289C4.68342 3.90237 5.31658 3.90237 5.70711 4.29289L9 7.58579L12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289C14.0976 4.68342 14.0976 5.31658 13.7071 5.70711L10.4142 9L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L9 10.4142L5.70711 13.7071C5.31658 14.0976 4.68342 14.0976 4.29289 13.7071Z"
+                            fill="#696CFF" />
+                    </svg>
+                </div>
+                <div class="modal-body border-0">
+                    <div class="border border-secondary mb-4 mx-2 mx-sm-5">
+                        <div class="row mx-0 bg-main text-white fs-14 text-center py-2 fw-bold">
+                            <div class="col-6">قیمت پایه</div>
+                            <div class="col-6">جزئیات</div>
+                        </div>
+                        <div class="row mx-0 bg-white text-dark fs-14 text-center py-2 fw-bold">
+                            <div class="col-6">هر گیگ 2500</div>
+                            <div class="col-6">تک لینک همه اپراتورها</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- menu overlay -->
     <div id="menuOverlay"></div>
 
@@ -132,7 +196,7 @@
                 </li>
             </ul>
         </aside>
-        <div class="flex-grow-1 bg-white h-100vh overflow-auto">
+        <div class="flex-grow-1 bg-white h-100vh overflow-auto dashboardContent">
             <div class="p-md-4">
                 <form
                     class="rounded-6 shadow-sm py-3 px-lg-5 px-4 d-flex align-items-center justify-content-between gap-3">
@@ -186,314 +250,465 @@
                             <path d="M24 14.5L1 14.5" stroke="#696CFF" stroke-width="2" stroke-linecap="round" />
                         </svg>
                     </div>
-                    <div>
+                    <div class="d-flex align-items-center gap-3">
+                        <svg data-bs-toggle="modal" data-bs-target="#description" class="cursor-pointer" width="18"
+                            height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 15C10 15.5523 9.55229 16 9 16C8.44771 16 8 15.5523 8 15C8 14.4477 8.44771 14 9 14C9.55229 14 10 14.4477 10 15ZM9 2C6.79086 2 5 3.79086 5 6H7C7 4.89543 7.89543 4 9 4H9.09431C10.1468 4 11 4.85321 11 5.90569V6.41886C11 6.93267 10.6712 7.38884 10.1838 7.55132C8.87964 7.98603 8 9.20647 8 10.5811V13H10V10.5811C10 10.0673 10.3288 9.61116 10.8162 9.44868C12.1204 9.01397 13 7.79353 13 6.41886V5.90569C13 3.74864 11.2514 2 9.09431 2H9Z"
+                                fill="#696CFF" />
+                        </svg>
                         <img alt="img" src="../assets/img/Icon.svg" class="img-fluid cursor-pointer">
                     </div>
                 </div>
                 <div>
-                    <div class="rounded-6 d-none d-sm-block shadow-sm py-3 px-lg-5 px-4 mb-4 mt-4 mt-md-0">
-                      <div class="d-flex align-items-center gap-2 mb-3">
-                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.16" fill-rule="evenodd" clip-rule="evenodd" d="M6 0C2.6916 0 0 2.90835 0 6.48317C0 10.058 2.6916 12.9663 6 12.9663C9.3084 12.9663 12 10.058 12 6.48317C12 2.90835 9.3084 0 6 0Z" fill="#696CFF"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6 3.2417C4.3458 3.2417 3 4.69588 3 6.48329C3 8.2707 4.3458 9.72487 6 9.72487C7.6542 9.72487 9 8.2707 9 6.48329C9 4.69588 7.6542 3.2417 6 3.2417Z" fill="#696CFF"/>
-                        </svg>
-                        <p class="mb-0 fw-bold fs-18 text-main2">توضیحات</p>
-                      </div>
-                      <p class="mb-0 text-dark">
-                        لطفا در صورت داشتن کد تخفیف آن را در قسمت مورد نظر اعمال نمایید.
-                      </p>
-                      <p class="text-dark">
-                        در خرید سرویس های مورد نظر دقت کنید . سرویس خریداری شده برگردانده نخواهد شد
-                    </p>
+                    <div class="rounded-6 d-none d-md-block shadow-sm py-3 px-lg-5 px-4 mb-4 mt-4 mt-md-0">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.16" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 0C2.6916 0 0 2.90835 0 6.48317C0 10.058 2.6916 12.9663 6 12.9663C9.3084 12.9663 12 10.058 12 6.48317C12 2.90835 9.3084 0 6 0Z"
+                                    fill="#696CFF" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 3.2417C4.3458 3.2417 3 4.69588 3 6.48329C3 8.2707 4.3458 9.72487 6 9.72487C7.6542 9.72487 9 8.2707 9 6.48329C9 4.69588 7.6542 3.2417 6 3.2417Z"
+                                    fill="#696CFF" />
+                            </svg>
+                            <p class="mb-0 fw-bold fs-18 text-main2">توضیحات</p>
+                        </div>
+                        <p class="mb-0 text-dark">
+                            لطفا در صورت داشتن کد تخفیف آن را در قسمت مورد نظر اعمال نمایید.
+                        </p>
+                        <p class="text-dark">
+                            در خرید سرویس های مورد نظر دقت کنید . سرویس خریداری شده برگردانده نخواهد شد
+                        </p>
                     </div>
-                    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-start gap-5 mt-5"> 
+                    <div
+                        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-start gap-5 mt-5">
                         <div class="d-flex align-items-center gap-2">
-                            <svg class="flex-shrink-0" width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path opacity="0.16" fill-rule="evenodd" clip-rule="evenodd" d="M6 0C2.6916 0 0 2.90835 0 6.48317C0 10.058 2.6916 12.9663 6 12.9663C9.3084 12.9663 12 10.058 12 6.48317C12 2.90835 9.3084 0 6 0Z" fill="#696CFF"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6 3.2417C4.3458 3.2417 3 4.69588 3 6.48329C3 8.2707 4.3458 9.72487 6 9.72487C7.6542 9.72487 9 8.2707 9 6.48329C9 4.69588 7.6542 3.2417 6 3.2417Z" fill="#696CFF"/>
+                            <svg class="flex-shrink-0" width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.16" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 0C2.6916 0 0 2.90835 0 6.48317C0 10.058 2.6916 12.9663 6 12.9663C9.3084 12.9663 12 10.058 12 6.48317C12 2.90835 9.3084 0 6 0Z"
+                                    fill="#696CFF" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 3.2417C4.3458 3.2417 3 4.69588 3 6.48329C3 8.2707 4.3458 9.72487 6 9.72487C7.6542 9.72487 9 8.2707 9 6.48329C9 4.69588 7.6542 3.2417 6 3.2417Z"
+                                    fill="#696CFF" />
                             </svg>
                             <p class="mb-0 fw-bold text-main2">موجودی کیف پول شما: 1/250/000 تومان</p>
                         </div>
                         <div class="d-flex align-items-center gap-3">
-                          <input placeholder="کد تخفیف" class="h-51 w-299 w-sm-100 fs-20 fs-ms-14 bg-main2 shadow-main border-main-1 text-center rounded-5 outline-none">
-                          <input type="submit" value="ارسال کد" class="bg-main text-white fs-20 fs-sm-14 fw-bold rounded-5 border-0 shadow-main w-104 h-51 d-flex align-items-center justify-content-center">
+                            <input placeholder="کد تخفیف"
+                                class="h-51 w-299 w-sm-100 fs-20 fs-ms-14 bg-main2 shadow-main border-main-1 text-center rounded-5 outline-none">
+                            <input type="submit" value="ارسال کد"
+                                class="bg-main text-white fs-20 fs-sm-14 fw-bold rounded-5 border-0 shadow-main w-104 h-51 d-flex align-items-center justify-content-center">
                         </div>
                     </div>
                     <!-- table -->
-                     <div class="mt-4">
-                       <div class="bg-main shadow fs-14 fs-sm-10 fw-bold row mx-0 px-2 py-3 text-white text-center">
-                        <div class="col-lg-1 col-2">عکس</div>
-                        <div class="col-lg-2 col-3">نام سرویس</div>
-                        <div class="col-lg-2 col-3">نوع ترافیک</div>
-                        <div class="col-lg-2 d-none d-lg-block">قیمت پایه</div>
-                        <div class="col-lg-3 col-2">توضیحات</div>
-                        <div class="col-2">خرید</div>
-                       </div>
-                       <div class="bg-white mb-1 border-bottom border-secondary shadow fs-14 fs-sm-10 fw-bold row mx-0 px-2 py-3 text-dark text-center">
-                        <div class="col-1 col-lg-1 col-2 d-flex align-items-center gap-sm-3 gap-1">
-                          <p class="mb-0">1-</p>
-                          <img alt="img" src="../assets/img/photo-1568602471122-7832951cc4c5.png" class="w-35 h-35 d-block rounded-circle">
+                    <div class="mt-4">
+                        <div class="bg-main shadow fs-14 fs-sm-10 fw-bold row mx-0 px-2 py-3 text-white text-center">
+                            <div class="col-lg-1 col-2">عکس</div>
+                            <div class="col-lg-2 col-3">نام سرویس</div>
+                            <div class="col-lg-2 col-3">نوع ترافیک</div>
+                            <div class="col-lg-2 d-none d-lg-block">قیمت پایه</div>
+                            <div class="col-lg-3 col-2">توضیحات</div>
+                            <div class="col-2">خرید</div>
                         </div>
-                        <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">آی پی ثابت</div>
-                        <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
-                            <p class="mb-0 rounded-5 bg-main text-white fw-bold d-inline-flex align-items-center justify-content-center py-1 px-lg-4 px-1">آی پی ثابت</p>
+                        <div
+                            class="bg-white mb-1 border-bottom border-secondary shadow fs-14 fs-sm-10 fw-bold row mx-0 px-2 py-3 text-dark text-center">
+                            <div class="col-1 col-lg-1 col-2 d-flex align-items-center gap-sm-3 gap-1">
+                                <p class="mb-0">1-</p>
+                                <img alt="img" src="../assets/img/photo-1568602471122-7832951cc4c5.png"
+                                    class="w-35 h-35 d-block rounded-circle">
+                            </div>
+                            <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">آی پی ثابت
+                            </div>
+                            <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                                <p
+                                    class="mb-0 rounded-5 bg-main text-white fw-bold d-inline-flex align-items-center justify-content-center py-1 px-lg-4 px-1">
+                                    آی پی ثابت</p>
+                            </div>
+                            <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-center">هر گیگ 2500
+                            </div>
+                            <div class="col-lg-3 col-2 d-flex align-items-center justify-content-center">
+                                <div>
+                                    <svg data-bs-toggle="modal" data-bs-target="#more" class="d-lg-none cursor-pointer"
+                                        width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 5C10 5.55228 9.55229 6 9 6C8.44771 6 8 5.55228 8 5C8 4.44772 8.44771 4 9 4C9.55229 4 10 4.44772 10 5ZM10 14V8H8V14H10Z"
+                                            fill="#696CFF" />
+                                    </svg>
+                                    <p class="mb-0 d-none d-lg-block">تک لینک همه اپراتورها</p>
+                                </div>
+                            </div>
+                            <div class="col-2 d-flex align-items-center justify-content-center">
+                                <a
+                                    class="mb-0 cursor-pointer rounded-5 bg-main text-white fw-bold h-28 d-inline-flex align-items-center justify-content-center px-lg-4 px-2">خرید</a>
+                            </div>
                         </div>
-                        <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-center">هر گیگ 2500</div>
-                        <div class="col-lg-3 col-2 d-flex align-items-center justify-content-center">
-                           <div>
-                            <svg class="d-lg-none cursor-pointer" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 5C10 5.55228 9.55229 6 9 6C8.44771 6 8 5.55228 8 5C8 4.44772 8.44771 4 9 4C9.55229 4 10 4.44772 10 5ZM10 14V8H8V14H10Z" fill="#696CFF"/>
-                            </svg>
-                            <p class="mb-0 d-none d-lg-block">تک لینک همه اپراتورها</p>
-                           </div>
+                        <div
+                            class="bg-white mb-1 border-bottom border-secondary shadow fs-14 fs-sm-10 fw-bold row mx-0 px-2 py-3 text-dark text-center">
+                            <div class="col-1 col-lg-1 col-2 d-flex align-items-center gap-sm-3 gap-1">
+                                <p class="mb-0">1-</p>
+                                <img alt="img" src="../assets/img/photo-1568602471122-7832951cc4c5.png"
+                                    class="w-35 h-35 d-block rounded-circle">
+                            </div>
+                            <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">آی پی ثابت
+                            </div>
+                            <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                                <p
+                                    class="mb-0 rounded-5 bg-main text-white fw-bold d-inline-flex align-items-center justify-content-center py-1 px-lg-4 px-1">
+                                    آی پی ثابت</p>
+                            </div>
+                            <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-center">هر گیگ 2500
+                            </div>
+                            <div class="col-lg-3 col-2 d-flex align-items-center justify-content-center">
+                                <div>
+                                    <svg data-bs-toggle="modal" data-bs-target="#more" class="d-lg-none cursor-pointer"
+                                        width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 5C10 5.55228 9.55229 6 9 6C8.44771 6 8 5.55228 8 5C8 4.44772 8.44771 4 9 4C9.55229 4 10 4.44772 10 5ZM10 14V8H8V14H10Z"
+                                            fill="#696CFF" />
+                                    </svg>
+                                    <p class="mb-0 d-none d-lg-block">تک لینک همه اپراتورها</p>
+                                </div>
+                            </div>
+                            <div class="col-2 d-flex align-items-center justify-content-center">
+                                <a
+                                    class="mb-0 cursor-pointer rounded-5 bg-main text-white fw-bold h-28 d-inline-flex align-items-center justify-content-center px-lg-4 px-2">خرید</a>
+                            </div>
                         </div>
-                        <div class="col-2 d-flex align-items-center justify-content-center">
-                            <a class="mb-0 cursor-pointer rounded-5 bg-main text-white fw-bold h-28 d-inline-flex align-items-center justify-content-center px-lg-4 px-2">خرید</a>
+                        <div
+                            class="bg-white mb-1 border-bottom border-secondary shadow fs-14 fs-sm-10 fw-bold row mx-0 px-2 py-3 text-dark text-center">
+                            <div class="col-1 col-lg-1 col-2 d-flex align-items-center gap-sm-3 gap-1">
+                                <p class="mb-0">1-</p>
+                                <img alt="img" src="../assets/img/photo-1568602471122-7832951cc4c5.png"
+                                    class="w-35 h-35 d-block rounded-circle">
+                            </div>
+                            <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">آی پی ثابت
+                            </div>
+                            <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                                <p
+                                    class="mb-0 rounded-5 bg-main text-white fw-bold d-inline-flex align-items-center justify-content-center py-1 px-lg-4 px-1">
+                                    آی پی ثابت</p>
+                            </div>
+                            <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-center">هر گیگ 2500
+                            </div>
+                            <div class="col-lg-3 col-2 d-flex align-items-center justify-content-center">
+                                <div>
+                                    <svg data-bs-toggle="modal" data-bs-target="#more" class="d-lg-none cursor-pointer"
+                                        width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 5C10 5.55228 9.55229 6 9 6C8.44771 6 8 5.55228 8 5C8 4.44772 8.44771 4 9 4C9.55229 4 10 4.44772 10 5ZM10 14V8H8V14H10Z"
+                                            fill="#696CFF" />
+                                    </svg>
+                                    <p class="mb-0 d-none d-lg-block">تک لینک همه اپراتورها</p>
+                                </div>
+                            </div>
+                            <div class="col-2 d-flex align-items-center justify-content-center">
+                                <a
+                                    class="mb-0 cursor-pointer rounded-5 bg-main text-white fw-bold h-28 d-inline-flex align-items-center justify-content-center px-lg-4 px-2">خرید</a>
+                            </div>
                         </div>
-                       </div>
-                       <div class="bg-white mb-1 border-bottom border-secondary shadow fs-14 fs-sm-10 fw-bold row mx-0 px-2 py-3 text-dark text-center">
-                        <div class="col-1 col-lg-1 col-2 d-flex align-items-center gap-sm-3 gap-1">
-                          <p class="mb-0">1-</p>
-                          <img alt="img" src="../assets/img/photo-1568602471122-7832951cc4c5.png" class="w-35 h-35 d-block rounded-circle">
+                        <div
+                            class="bg-white mb-1 border-bottom border-secondary shadow fs-14 fs-sm-10 fw-bold row mx-0 px-2 py-3 text-dark text-center">
+                            <div class="col-1 col-lg-1 col-2 d-flex align-items-center gap-sm-3 gap-1">
+                                <p class="mb-0">1-</p>
+                                <img alt="img" src="../assets/img/photo-1568602471122-7832951cc4c5.png"
+                                    class="w-35 h-35 d-block rounded-circle">
+                            </div>
+                            <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">آی پی ثابت
+                            </div>
+                            <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                                <p
+                                    class="mb-0 rounded-5 bg-main text-white fw-bold d-inline-flex align-items-center justify-content-center py-1 px-lg-4 px-1">
+                                    آی پی ثابت</p>
+                            </div>
+                            <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-center">هر گیگ 2500
+                            </div>
+                            <div class="col-lg-3 col-2 d-flex align-items-center justify-content-center">
+                                <div>
+                                    <svg data-bs-toggle="modal" data-bs-target="#more" class="d-lg-none cursor-pointer"
+                                        width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 5C10 5.55228 9.55229 6 9 6C8.44771 6 8 5.55228 8 5C8 4.44772 8.44771 4 9 4C9.55229 4 10 4.44772 10 5ZM10 14V8H8V14H10Z"
+                                            fill="#696CFF" />
+                                    </svg>
+                                    <p class="mb-0 d-none d-lg-block">تک لینک همه اپراتورها</p>
+                                </div>
+                            </div>
+                            <div class="col-2 d-flex align-items-center justify-content-center">
+                                <a
+                                    class="mb-0 cursor-pointer rounded-5 bg-main text-white fw-bold h-28 d-inline-flex align-items-center justify-content-center px-lg-4 px-2">خرید</a>
+                            </div>
                         </div>
-                        <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">آی پی ثابت</div>
-                        <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
-                            <p class="mb-0 rounded-5 bg-main text-white fw-bold d-inline-flex align-items-center justify-content-center py-1 px-lg-4 px-1">آی پی ثابت</p>
+                        <div
+                            class="bg-white mb-1 border-bottom border-secondary shadow fs-14 fs-sm-10 fw-bold row mx-0 px-2 py-3 text-dark text-center">
+                            <div class="col-1 col-lg-1 col-2 d-flex align-items-center gap-sm-3 gap-1">
+                                <p class="mb-0">1-</p>
+                                <img alt="img" src="../assets/img/photo-1568602471122-7832951cc4c5.png"
+                                    class="w-35 h-35 d-block rounded-circle">
+                            </div>
+                            <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">آی پی ثابت
+                            </div>
+                            <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                                <p
+                                    class="mb-0 rounded-5 bg-main text-white fw-bold d-inline-flex align-items-center justify-content-center py-1 px-lg-4 px-1">
+                                    آی پی ثابت</p>
+                            </div>
+                            <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-center">هر گیگ 2500
+                            </div>
+                            <div class="col-lg-3 col-2 d-flex align-items-center justify-content-center">
+                                <div>
+                                    <svg data-bs-toggle="modal" data-bs-target="#more" class="d-lg-none cursor-pointer"
+                                        width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 5C10 5.55228 9.55229 6 9 6C8.44771 6 8 5.55228 8 5C8 4.44772 8.44771 4 9 4C9.55229 4 10 4.44772 10 5ZM10 14V8H8V14H10Z"
+                                            fill="#696CFF" />
+                                    </svg>
+                                    <p class="mb-0 d-none d-lg-block">تک لینک همه اپراتورها</p>
+                                </div>
+                            </div>
+                            <div class="col-2 d-flex align-items-center justify-content-center">
+                                <a
+                                    class="mb-0 cursor-pointer rounded-5 bg-main text-white fw-bold h-28 d-inline-flex align-items-center justify-content-center px-lg-4 px-2">خرید</a>
+                            </div>
                         </div>
-                        <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-center">هر گیگ 2500</div>
-                        <div class="col-lg-3 col-2 d-flex align-items-center justify-content-center">
-                           <div>
-                            <svg class="d-lg-none cursor-pointer" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 5C10 5.55228 9.55229 6 9 6C8.44771 6 8 5.55228 8 5C8 4.44772 8.44771 4 9 4C9.55229 4 10 4.44772 10 5ZM10 14V8H8V14H10Z" fill="#696CFF"/>
-                            </svg>
-                            <p class="mb-0 d-none d-lg-block">تک لینک همه اپراتورها</p>
-                           </div>
+                        <div
+                            class="bg-white mb-1 border-bottom border-secondary shadow fs-14 fs-sm-10 fw-bold row mx-0 px-2 py-3 text-dark text-center">
+                            <div class="col-1 col-lg-1 col-2 d-flex align-items-center gap-sm-3 gap-1">
+                                <p class="mb-0">1-</p>
+                                <img alt="img" src="../assets/img/photo-1568602471122-7832951cc4c5.png"
+                                    class="w-35 h-35 d-block rounded-circle">
+                            </div>
+                            <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">آی پی ثابت
+                            </div>
+                            <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                                <p
+                                    class="mb-0 rounded-5 bg-main text-white fw-bold d-inline-flex align-items-center justify-content-center py-1 px-lg-4 px-1">
+                                    آی پی ثابت</p>
+                            </div>
+                            <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-center">هر گیگ 2500
+                            </div>
+                            <div class="col-lg-3 col-2 d-flex align-items-center justify-content-center">
+                                <div>
+                                    <svg data-bs-toggle="modal" data-bs-target="#more" class="d-lg-none cursor-pointer"
+                                        width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 5C10 5.55228 9.55229 6 9 6C8.44771 6 8 5.55228 8 5C8 4.44772 8.44771 4 9 4C9.55229 4 10 4.44772 10 5ZM10 14V8H8V14H10Z"
+                                            fill="#696CFF" />
+                                    </svg>
+                                    <p class="mb-0 d-none d-lg-block">تک لینک همه اپراتورها</p>
+                                </div>
+                            </div>
+                            <div class="col-2 d-flex align-items-center justify-content-center">
+                                <a
+                                    class="mb-0 cursor-pointer rounded-5 bg-main text-white fw-bold h-28 d-inline-flex align-items-center justify-content-center px-lg-4 px-2">خرید</a>
+                            </div>
                         </div>
-                        <div class="col-2 d-flex align-items-center justify-content-center">
-                            <a class="mb-0 cursor-pointer rounded-5 bg-main text-white fw-bold h-28 d-inline-flex align-items-center justify-content-center px-lg-4 px-2">خرید</a>
+                        <div
+                            class="bg-white mb-1 border-bottom border-secondary shadow fs-14 fs-sm-10 fw-bold row mx-0 px-2 py-3 text-dark text-center">
+                            <div class="col-1 col-lg-1 col-2 d-flex align-items-center gap-sm-3 gap-1">
+                                <p class="mb-0">1-</p>
+                                <img alt="img" src="../assets/img/photo-1568602471122-7832951cc4c5.png"
+                                    class="w-35 h-35 d-block rounded-circle">
+                            </div>
+                            <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">آی پی ثابت
+                            </div>
+                            <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                                <p
+                                    class="mb-0 rounded-5 bg-main text-white fw-bold d-inline-flex align-items-center justify-content-center py-1 px-lg-4 px-1">
+                                    آی پی ثابت</p>
+                            </div>
+                            <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-center">هر گیگ 2500
+                            </div>
+                            <div class="col-lg-3 col-2 d-flex align-items-center justify-content-center">
+                                <div>
+                                    <svg data-bs-toggle="modal" data-bs-target="#more" class="d-lg-none cursor-pointer"
+                                        width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 5C10 5.55228 9.55229 6 9 6C8.44771 6 8 5.55228 8 5C8 4.44772 8.44771 4 9 4C9.55229 4 10 4.44772 10 5ZM10 14V8H8V14H10Z"
+                                            fill="#696CFF" />
+                                    </svg>
+                                    <p class="mb-0 d-none d-lg-block">تک لینک همه اپراتورها</p>
+                                </div>
+                            </div>
+                            <div class="col-2 d-flex align-items-center justify-content-center">
+                                <a
+                                    class="mb-0 cursor-pointer rounded-5 bg-main text-white fw-bold h-28 d-inline-flex align-items-center justify-content-center px-lg-4 px-2">خرید</a>
+                            </div>
                         </div>
-                       </div>
-                       <div class="bg-white mb-1 border-bottom border-secondary shadow fs-14 fs-sm-10 fw-bold row mx-0 px-2 py-3 text-dark text-center">
-                        <div class="col-1 col-lg-1 col-2 d-flex align-items-center gap-sm-3 gap-1">
-                          <p class="mb-0">1-</p>
-                          <img alt="img" src="../assets/img/photo-1568602471122-7832951cc4c5.png" class="w-35 h-35 d-block rounded-circle">
+                        <div
+                            class="bg-white mb-1 border-bottom border-secondary shadow fs-14 fs-sm-10 fw-bold row mx-0 px-2 py-3 text-dark text-center">
+                            <div class="col-1 col-lg-1 col-2 d-flex align-items-center gap-sm-3 gap-1">
+                                <p class="mb-0">1-</p>
+                                <img alt="img" src="../assets/img/photo-1568602471122-7832951cc4c5.png"
+                                    class="w-35 h-35 d-block rounded-circle">
+                            </div>
+                            <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">آی پی ثابت
+                            </div>
+                            <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                                <p
+                                    class="mb-0 rounded-5 bg-main text-white fw-bold d-inline-flex align-items-center justify-content-center py-1 px-lg-4 px-1">
+                                    آی پی ثابت</p>
+                            </div>
+                            <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-center">هر گیگ 2500
+                            </div>
+                            <div class="col-lg-3 col-2 d-flex align-items-center justify-content-center">
+                                <div>
+                                    <svg data-bs-toggle="modal" data-bs-target="#more" class="d-lg-none cursor-pointer"
+                                        width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 5C10 5.55228 9.55229 6 9 6C8.44771 6 8 5.55228 8 5C8 4.44772 8.44771 4 9 4C9.55229 4 10 4.44772 10 5ZM10 14V8H8V14H10Z"
+                                            fill="#696CFF" />
+                                    </svg>
+                                    <p class="mb-0 d-none d-lg-block">تک لینک همه اپراتورها</p>
+                                </div>
+                            </div>
+                            <div class="col-2 d-flex align-items-center justify-content-center">
+                                <a
+                                    class="mb-0 cursor-pointer rounded-5 bg-main text-white fw-bold h-28 d-inline-flex align-items-center justify-content-center px-lg-4 px-2">خرید</a>
+                            </div>
                         </div>
-                        <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">آی پی ثابت</div>
-                        <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
-                            <p class="mb-0 rounded-5 bg-main text-white fw-bold d-inline-flex align-items-center justify-content-center py-1 px-lg-4 px-1">آی پی ثابت</p>
+                        <div
+                            class="bg-white mb-1 border-bottom border-secondary shadow fs-14 fs-sm-10 fw-bold row mx-0 px-2 py-3 text-dark text-center">
+                            <div class="col-1 col-lg-1 col-2 d-flex align-items-center gap-sm-3 gap-1">
+                                <p class="mb-0">1-</p>
+                                <img alt="img" src="../assets/img/photo-1568602471122-7832951cc4c5.png"
+                                    class="w-35 h-35 d-block rounded-circle">
+                            </div>
+                            <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">آی پی ثابت
+                            </div>
+                            <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                                <p
+                                    class="mb-0 rounded-5 bg-main text-white fw-bold d-inline-flex align-items-center justify-content-center py-1 px-lg-4 px-1">
+                                    آی پی ثابت</p>
+                            </div>
+                            <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-center">هر گیگ 2500
+                            </div>
+                            <div class="col-lg-3 col-2 d-flex align-items-center justify-content-center">
+                                <div>
+                                    <svg data-bs-toggle="modal" data-bs-target="#more" class="d-lg-none cursor-pointer"
+                                        width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 5C10 5.55228 9.55229 6 9 6C8.44771 6 8 5.55228 8 5C8 4.44772 8.44771 4 9 4C9.55229 4 10 4.44772 10 5ZM10 14V8H8V14H10Z"
+                                            fill="#696CFF" />
+                                    </svg>
+                                    <p class="mb-0 d-none d-lg-block">تک لینک همه اپراتورها</p>
+                                </div>
+                            </div>
+                            <div class="col-2 d-flex align-items-center justify-content-center">
+                                <a
+                                    class="mb-0 cursor-pointer rounded-5 bg-main text-white fw-bold h-28 d-inline-flex align-items-center justify-content-center px-lg-4 px-2">خرید</a>
+                            </div>
                         </div>
-                        <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-center">هر گیگ 2500</div>
-                        <div class="col-lg-3 col-2 d-flex align-items-center justify-content-center">
-                           <div>
-                            <svg class="d-lg-none cursor-pointer" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 5C10 5.55228 9.55229 6 9 6C8.44771 6 8 5.55228 8 5C8 4.44772 8.44771 4 9 4C9.55229 4 10 4.44772 10 5ZM10 14V8H8V14H10Z" fill="#696CFF"/>
-                            </svg>
-                            <p class="mb-0 d-none d-lg-block">تک لینک همه اپراتورها</p>
-                           </div>
+                        <div
+                            class="bg-white mb-1 border-bottom border-secondary shadow fs-14 fs-sm-10 fw-bold row mx-0 px-2 py-3 text-dark text-center">
+                            <div class="col-1 col-lg-1 col-2 d-flex align-items-center gap-sm-3 gap-1">
+                                <p class="mb-0">1-</p>
+                                <img alt="img" src="../assets/img/photo-1568602471122-7832951cc4c5.png"
+                                    class="w-35 h-35 d-block rounded-circle">
+                            </div>
+                            <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">آی پی ثابت
+                            </div>
+                            <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                                <p
+                                    class="mb-0 rounded-5 bg-main text-white fw-bold d-inline-flex align-items-center justify-content-center py-1 px-lg-4 px-1">
+                                    آی پی ثابت</p>
+                            </div>
+                            <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-center">هر گیگ 2500
+                            </div>
+                            <div class="col-lg-3 col-2 d-flex align-items-center justify-content-center">
+                                <div>
+                                    <svg data-bs-toggle="modal" data-bs-target="#more" class="d-lg-none cursor-pointer"
+                                        width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 5C10 5.55228 9.55229 6 9 6C8.44771 6 8 5.55228 8 5C8 4.44772 8.44771 4 9 4C9.55229 4 10 4.44772 10 5ZM10 14V8H8V14H10Z"
+                                            fill="#696CFF" />
+                                    </svg>
+                                    <p class="mb-0 d-none d-lg-block">تک لینک همه اپراتورها</p>
+                                </div>
+                            </div>
+                            <div class="col-2 d-flex align-items-center justify-content-center">
+                                <a
+                                    class="mb-0 cursor-pointer rounded-5 bg-main text-white fw-bold h-28 d-inline-flex align-items-center justify-content-center px-lg-4 px-2">خرید</a>
+                            </div>
                         </div>
-                        <div class="col-2 d-flex align-items-center justify-content-center">
-                            <a class="mb-0 cursor-pointer rounded-5 bg-main text-white fw-bold h-28 d-inline-flex align-items-center justify-content-center px-lg-4 px-2">خرید</a>
+                        <div
+                            class="bg-white mb-1 border-bottom border-secondary shadow fs-14 fs-sm-10 fw-bold row mx-0 px-2 py-3 text-dark text-center">
+                            <div class="col-1 col-lg-1 col-2 d-flex align-items-center gap-sm-3 gap-1">
+                                <p class="mb-0">1-</p>
+                                <img alt="img" src="../assets/img/photo-1568602471122-7832951cc4c5.png"
+                                    class="w-35 h-35 d-block rounded-circle">
+                            </div>
+                            <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">آی پی ثابت
+                            </div>
+                            <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                                <p
+                                    class="mb-0 rounded-5 bg-main text-white fw-bold d-inline-flex align-items-center justify-content-center py-1 px-lg-4 px-1">
+                                    آی پی ثابت</p>
+                            </div>
+                            <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-center">هر گیگ 2500
+                            </div>
+                            <div class="col-lg-3 col-2 d-flex align-items-center justify-content-center">
+                                <div>
+                                    <svg data-bs-toggle="modal" data-bs-target="#more" class="d-lg-none cursor-pointer"
+                                        width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 5C10 5.55228 9.55229 6 9 6C8.44771 6 8 5.55228 8 5C8 4.44772 8.44771 4 9 4C9.55229 4 10 4.44772 10 5ZM10 14V8H8V14H10Z"
+                                            fill="#696CFF" />
+                                    </svg>
+                                    <p class="mb-0 d-none d-lg-block">تک لینک همه اپراتورها</p>
+                                </div>
+                            </div>
+                            <div class="col-2 d-flex align-items-center justify-content-center">
+                                <a
+                                    class="mb-0 cursor-pointer rounded-5 bg-main text-white fw-bold h-28 d-inline-flex align-items-center justify-content-center px-lg-4 px-2">خرید</a>
+                            </div>
                         </div>
-                       </div>
-                       <div class="bg-white mb-1 border-bottom border-secondary shadow fs-14 fs-sm-10 fw-bold row mx-0 px-2 py-3 text-dark text-center">
-                        <div class="col-1 col-lg-1 col-2 d-flex align-items-center gap-sm-3 gap-1">
-                          <p class="mb-0">1-</p>
-                          <img alt="img" src="../assets/img/photo-1568602471122-7832951cc4c5.png" class="w-35 h-35 d-block rounded-circle">
+                        <div
+                            class="bg-white mb-1 border-bottom border-secondary shadow fs-14 fs-sm-10 fw-bold row mx-0 px-2 py-3 text-dark text-center">
+                            <div class="col-1 col-lg-1 col-2 d-flex align-items-center gap-sm-3 gap-1">
+                                <p class="mb-0">1-</p>
+                                <img alt="img" src="../assets/img/photo-1568602471122-7832951cc4c5.png"
+                                    class="w-35 h-35 d-block rounded-circle">
+                            </div>
+                            <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">آی پی ثابت
+                            </div>
+                            <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                                <p
+                                    class="mb-0 rounded-5 bg-main text-white fw-bold d-inline-flex align-items-center justify-content-center py-1 px-lg-4 px-1">
+                                    آی پی ثابت</p>
+                            </div>
+                            <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-center">هر گیگ 2500
+                            </div>
+                            <div class="col-lg-3 col-2 d-flex align-items-center justify-content-center">
+                                <div>
+                                    <svg data-bs-toggle="modal" data-bs-target="#more" class="d-lg-none cursor-pointer"
+                                        width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 5C10 5.55228 9.55229 6 9 6C8.44771 6 8 5.55228 8 5C8 4.44772 8.44771 4 9 4C9.55229 4 10 4.44772 10 5ZM10 14V8H8V14H10Z"
+                                            fill="#696CFF" />
+                                    </svg>
+                                    <p class="mb-0 d-none d-lg-block">تک لینک همه اپراتورها</p>
+                                </div>
+                            </div>
+                            <div class="col-2 d-flex align-items-center justify-content-center">
+                                <a
+                                    class="mb-0 cursor-pointer rounded-5 bg-main text-white fw-bold h-28 d-inline-flex align-items-center justify-content-center px-lg-4 px-2">خرید</a>
+                            </div>
                         </div>
-                        <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">آی پی ثابت</div>
-                        <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
-                            <p class="mb-0 rounded-5 bg-main text-white fw-bold d-inline-flex align-items-center justify-content-center py-1 px-lg-4 px-1">آی پی ثابت</p>
-                        </div>
-                        <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-center">هر گیگ 2500</div>
-                        <div class="col-lg-3 col-2 d-flex align-items-center justify-content-center">
-                           <div>
-                            <svg class="d-lg-none cursor-pointer" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 5C10 5.55228 9.55229 6 9 6C8.44771 6 8 5.55228 8 5C8 4.44772 8.44771 4 9 4C9.55229 4 10 4.44772 10 5ZM10 14V8H8V14H10Z" fill="#696CFF"/>
-                            </svg>
-                            <p class="mb-0 d-none d-lg-block">تک لینک همه اپراتورها</p>
-                           </div>
-                        </div>
-                        <div class="col-2 d-flex align-items-center justify-content-center">
-                            <a class="mb-0 cursor-pointer rounded-5 bg-main text-white fw-bold h-28 d-inline-flex align-items-center justify-content-center px-lg-4 px-2">خرید</a>
-                        </div>
-                       </div>
-                       <div class="bg-white mb-1 border-bottom border-secondary shadow fs-14 fs-sm-10 fw-bold row mx-0 px-2 py-3 text-dark text-center">
-                        <div class="col-1 col-lg-1 col-2 d-flex align-items-center gap-sm-3 gap-1">
-                          <p class="mb-0">1-</p>
-                          <img alt="img" src="../assets/img/photo-1568602471122-7832951cc4c5.png" class="w-35 h-35 d-block rounded-circle">
-                        </div>
-                        <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">آی پی ثابت</div>
-                        <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
-                            <p class="mb-0 rounded-5 bg-main text-white fw-bold d-inline-flex align-items-center justify-content-center py-1 px-lg-4 px-1">آی پی ثابت</p>
-                        </div>
-                        <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-center">هر گیگ 2500</div>
-                        <div class="col-lg-3 col-2 d-flex align-items-center justify-content-center">
-                           <div>
-                            <svg class="d-lg-none cursor-pointer" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 5C10 5.55228 9.55229 6 9 6C8.44771 6 8 5.55228 8 5C8 4.44772 8.44771 4 9 4C9.55229 4 10 4.44772 10 5ZM10 14V8H8V14H10Z" fill="#696CFF"/>
-                            </svg>
-                            <p class="mb-0 d-none d-lg-block">تک لینک همه اپراتورها</p>
-                           </div>
-                        </div>
-                        <div class="col-2 d-flex align-items-center justify-content-center">
-                            <a class="mb-0 cursor-pointer rounded-5 bg-main text-white fw-bold h-28 d-inline-flex align-items-center justify-content-center px-lg-4 px-2">خرید</a>
-                        </div>
-                       </div>
-                       <div class="bg-white mb-1 border-bottom border-secondary shadow fs-14 fs-sm-10 fw-bold row mx-0 px-2 py-3 text-dark text-center">
-                        <div class="col-1 col-lg-1 col-2 d-flex align-items-center gap-sm-3 gap-1">
-                          <p class="mb-0">1-</p>
-                          <img alt="img" src="../assets/img/photo-1568602471122-7832951cc4c5.png" class="w-35 h-35 d-block rounded-circle">
-                        </div>
-                        <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">آی پی ثابت</div>
-                        <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
-                            <p class="mb-0 rounded-5 bg-main text-white fw-bold d-inline-flex align-items-center justify-content-center py-1 px-lg-4 px-1">آی پی ثابت</p>
-                        </div>
-                        <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-center">هر گیگ 2500</div>
-                        <div class="col-lg-3 col-2 d-flex align-items-center justify-content-center">
-                           <div>
-                            <svg class="d-lg-none cursor-pointer" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 5C10 5.55228 9.55229 6 9 6C8.44771 6 8 5.55228 8 5C8 4.44772 8.44771 4 9 4C9.55229 4 10 4.44772 10 5ZM10 14V8H8V14H10Z" fill="#696CFF"/>
-                            </svg>
-                            <p class="mb-0 d-none d-lg-block">تک لینک همه اپراتورها</p>
-                           </div>
-                        </div>
-                        <div class="col-2 d-flex align-items-center justify-content-center">
-                            <a class="mb-0 cursor-pointer rounded-5 bg-main text-white fw-bold h-28 d-inline-flex align-items-center justify-content-center px-lg-4 px-2">خرید</a>
-                        </div>
-                       </div>
-                       <div class="bg-white mb-1 border-bottom border-secondary shadow fs-14 fs-sm-10 fw-bold row mx-0 px-2 py-3 text-dark text-center">
-                        <div class="col-1 col-lg-1 col-2 d-flex align-items-center gap-sm-3 gap-1">
-                          <p class="mb-0">1-</p>
-                          <img alt="img" src="../assets/img/photo-1568602471122-7832951cc4c5.png" class="w-35 h-35 d-block rounded-circle">
-                        </div>
-                        <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">آی پی ثابت</div>
-                        <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
-                            <p class="mb-0 rounded-5 bg-main text-white fw-bold d-inline-flex align-items-center justify-content-center py-1 px-lg-4 px-1">آی پی ثابت</p>
-                        </div>
-                        <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-center">هر گیگ 2500</div>
-                        <div class="col-lg-3 col-2 d-flex align-items-center justify-content-center">
-                           <div>
-                            <svg class="d-lg-none cursor-pointer" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 5C10 5.55228 9.55229 6 9 6C8.44771 6 8 5.55228 8 5C8 4.44772 8.44771 4 9 4C9.55229 4 10 4.44772 10 5ZM10 14V8H8V14H10Z" fill="#696CFF"/>
-                            </svg>
-                            <p class="mb-0 d-none d-lg-block">تک لینک همه اپراتورها</p>
-                           </div>
-                        </div>
-                        <div class="col-2 d-flex align-items-center justify-content-center">
-                            <a class="mb-0 cursor-pointer rounded-5 bg-main text-white fw-bold h-28 d-inline-flex align-items-center justify-content-center px-lg-4 px-2">خرید</a>
-                        </div>
-                       </div>
-                       <div class="bg-white mb-1 border-bottom border-secondary shadow fs-14 fs-sm-10 fw-bold row mx-0 px-2 py-3 text-dark text-center">
-                        <div class="col-1 col-lg-1 col-2 d-flex align-items-center gap-sm-3 gap-1">
-                          <p class="mb-0">1-</p>
-                          <img alt="img" src="../assets/img/photo-1568602471122-7832951cc4c5.png" class="w-35 h-35 d-block rounded-circle">
-                        </div>
-                        <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">آی پی ثابت</div>
-                        <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
-                            <p class="mb-0 rounded-5 bg-main text-white fw-bold d-inline-flex align-items-center justify-content-center py-1 px-lg-4 px-1">آی پی ثابت</p>
-                        </div>
-                        <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-center">هر گیگ 2500</div>
-                        <div class="col-lg-3 col-2 d-flex align-items-center justify-content-center">
-                           <div>
-                            <svg class="d-lg-none cursor-pointer" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 5C10 5.55228 9.55229 6 9 6C8.44771 6 8 5.55228 8 5C8 4.44772 8.44771 4 9 4C9.55229 4 10 4.44772 10 5ZM10 14V8H8V14H10Z" fill="#696CFF"/>
-                            </svg>
-                            <p class="mb-0 d-none d-lg-block">تک لینک همه اپراتورها</p>
-                           </div>
-                        </div>
-                        <div class="col-2 d-flex align-items-center justify-content-center">
-                            <a class="mb-0 cursor-pointer rounded-5 bg-main text-white fw-bold h-28 d-inline-flex align-items-center justify-content-center px-lg-4 px-2">خرید</a>
-                        </div>
-                       </div>
-                       <div class="bg-white mb-1 border-bottom border-secondary shadow fs-14 fs-sm-10 fw-bold row mx-0 px-2 py-3 text-dark text-center">
-                        <div class="col-1 col-lg-1 col-2 d-flex align-items-center gap-sm-3 gap-1">
-                          <p class="mb-0">1-</p>
-                          <img alt="img" src="../assets/img/photo-1568602471122-7832951cc4c5.png" class="w-35 h-35 d-block rounded-circle">
-                        </div>
-                        <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">آی پی ثابت</div>
-                        <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
-                            <p class="mb-0 rounded-5 bg-main text-white fw-bold d-inline-flex align-items-center justify-content-center py-1 px-lg-4 px-1">آی پی ثابت</p>
-                        </div>
-                        <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-center">هر گیگ 2500</div>
-                        <div class="col-lg-3 col-2 d-flex align-items-center justify-content-center">
-                           <div>
-                            <svg class="d-lg-none cursor-pointer" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 5C10 5.55228 9.55229 6 9 6C8.44771 6 8 5.55228 8 5C8 4.44772 8.44771 4 9 4C9.55229 4 10 4.44772 10 5ZM10 14V8H8V14H10Z" fill="#696CFF"/>
-                            </svg>
-                            <p class="mb-0 d-none d-lg-block">تک لینک همه اپراتورها</p>
-                           </div>
-                        </div>
-                        <div class="col-2 d-flex align-items-center justify-content-center">
-                            <a class="mb-0 cursor-pointer rounded-5 bg-main text-white fw-bold h-28 d-inline-flex align-items-center justify-content-center px-lg-4 px-2">خرید</a>
-                        </div>
-                       </div>
-                       <div class="bg-white mb-1 border-bottom border-secondary shadow fs-14 fs-sm-10 fw-bold row mx-0 px-2 py-3 text-dark text-center">
-                        <div class="col-1 col-lg-1 col-2 d-flex align-items-center gap-sm-3 gap-1">
-                          <p class="mb-0">1-</p>
-                          <img alt="img" src="../assets/img/photo-1568602471122-7832951cc4c5.png" class="w-35 h-35 d-block rounded-circle">
-                        </div>
-                        <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">آی پی ثابت</div>
-                        <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
-                            <p class="mb-0 rounded-5 bg-main text-white fw-bold d-inline-flex align-items-center justify-content-center py-1 px-lg-4 px-1">آی پی ثابت</p>
-                        </div>
-                        <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-center">هر گیگ 2500</div>
-                        <div class="col-lg-3 col-2 d-flex align-items-center justify-content-center">
-                           <div>
-                            <svg class="d-lg-none cursor-pointer" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 5C10 5.55228 9.55229 6 9 6C8.44771 6 8 5.55228 8 5C8 4.44772 8.44771 4 9 4C9.55229 4 10 4.44772 10 5ZM10 14V8H8V14H10Z" fill="#696CFF"/>
-                            </svg>
-                            <p class="mb-0 d-none d-lg-block">تک لینک همه اپراتورها</p>
-                           </div>
-                        </div>
-                        <div class="col-2 d-flex align-items-center justify-content-center">
-                            <a class="mb-0 cursor-pointer rounded-5 bg-main text-white fw-bold h-28 d-inline-flex align-items-center justify-content-center px-lg-4 px-2">خرید</a>
-                        </div>
-                       </div>
-                       <div class="bg-white mb-1 border-bottom border-secondary shadow fs-14 fs-sm-10 fw-bold row mx-0 px-2 py-3 text-dark text-center">
-                        <div class="col-1 col-lg-1 col-2 d-flex align-items-center gap-sm-3 gap-1">
-                          <p class="mb-0">1-</p>
-                          <img alt="img" src="../assets/img/photo-1568602471122-7832951cc4c5.png" class="w-35 h-35 d-block rounded-circle">
-                        </div>
-                        <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">آی پی ثابت</div>
-                        <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
-                            <p class="mb-0 rounded-5 bg-main text-white fw-bold d-inline-flex align-items-center justify-content-center py-1 px-lg-4 px-1">آی پی ثابت</p>
-                        </div>
-                        <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-center">هر گیگ 2500</div>
-                        <div class="col-lg-3 col-2 d-flex align-items-center justify-content-center">
-                           <div>
-                            <svg class="d-lg-none cursor-pointer" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 5C10 5.55228 9.55229 6 9 6C8.44771 6 8 5.55228 8 5C8 4.44772 8.44771 4 9 4C9.55229 4 10 4.44772 10 5ZM10 14V8H8V14H10Z" fill="#696CFF"/>
-                            </svg>
-                            <p class="mb-0 d-none d-lg-block">تک لینک همه اپراتورها</p>
-                           </div>
-                        </div>
-                        <div class="col-2 d-flex align-items-center justify-content-center">
-                            <a class="mb-0 cursor-pointer rounded-5 bg-main text-white fw-bold h-28 d-inline-flex align-items-center justify-content-center px-lg-4 px-2">خرید</a>
-                        </div>
-                       </div>
-                       <div class="bg-white mb-1 border-bottom border-secondary shadow fs-14 fs-sm-10 fw-bold row mx-0 px-2 py-3 text-dark text-center">
-                        <div class="col-1 col-lg-1 col-2 d-flex align-items-center gap-sm-3 gap-1">
-                          <p class="mb-0">1-</p>
-                          <img alt="img" src="../assets/img/photo-1568602471122-7832951cc4c5.png" class="w-35 h-35 d-block rounded-circle">
-                        </div>
-                        <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">آی پی ثابت</div>
-                        <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
-                            <p class="mb-0 rounded-5 bg-main text-white fw-bold d-inline-flex align-items-center justify-content-center py-1 px-lg-4 px-1">آی پی ثابت</p>
-                        </div>
-                        <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-center">هر گیگ 2500</div>
-                        <div class="col-lg-3 col-2 d-flex align-items-center justify-content-center">
-                           <div>
-                            <svg class="d-lg-none cursor-pointer" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 5C10 5.55228 9.55229 6 9 6C8.44771 6 8 5.55228 8 5C8 4.44772 8.44771 4 9 4C9.55229 4 10 4.44772 10 5ZM10 14V8H8V14H10Z" fill="#696CFF"/>
-                            </svg>
-                            <p class="mb-0 d-none d-lg-block">تک لینک همه اپراتورها</p>
-                           </div>
-                        </div>
-                        <div class="col-2 d-flex align-items-center justify-content-center">
-                            <a class="mb-0 cursor-pointer rounded-5 bg-main text-white fw-bold h-28 d-inline-flex align-items-center justify-content-center px-lg-4 px-2">خرید</a>
-                        </div>
-                       </div>
-                     </div>
+                    </div>
                 </div>
             </div>
         </div>
