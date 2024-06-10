@@ -405,7 +405,7 @@ aside ul li a:hover,aside ul li:hover div,aside ul li.active > a,aside ul li.act
 .dropdownContent,.dropdownBtn a img{
     transition: all .4s ease-in-out;
 }
-.dropdownBtn.active a img{
+.dropdownBtn.active a img:last-child{
     transform: rotate(180deg);
 }
 .dropdownContent{
