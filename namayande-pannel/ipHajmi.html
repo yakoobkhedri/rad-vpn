@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/styles.css'>
+    <title>آی پی حجمی</title>
+</head>
+
+<body>
+
+    <!-- description modal -->
+    <div class="modal fade" id="description" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-5 shadow-main">
+                <div class="modal-header border-0 pb-0 d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.16" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4 0C1.7944 0 0 1.9389 0 4.32212C0 6.70533 1.7944 8.64423 4 8.64423C6.2056 8.64423 8 6.70533 8 4.32212C8 1.9389 6.2056 0 4 0Z"
+                                fill="#696CFF" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4 2.16113C2.8972 2.16113 2 3.13058 2 4.32219C2 5.5138 2.8972 6.48325 4 6.48325C5.1028 6.48325 6 5.5138 6 4.32219C6 3.13058 5.1028 2.16113 4 2.16113Z"
+                                fill="#696CFF" />
+                        </svg>
+                        <p class="mb-0 fw-bold fs-14 text-main2">توضیحات</p>
+                    </div>
+                    <svg class="cursor-pointer mb-15" data-bs-dismiss="modal" aria-label="Close" width="18" height="18"
+                        viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM4.29289 13.7071C3.90237 13.3166 3.90237 12.6834 4.29289 12.2929L7.58579 9L4.29289 5.70711C3.90237 5.31658 3.90237 4.68342 4.29289 4.29289C4.68342 3.90237 5.31658 3.90237 5.70711 4.29289L9 7.58579L12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289C14.0976 4.68342 14.0976 5.31658 13.7071 5.70711L10.4142 9L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L9 10.4142L5.70711 13.7071C5.31658 14.0976 4.68342 14.0976 4.29289 13.7071Z"
+                            fill="#696CFF" />
+                    </svg>
+                </div>
+                <div class="modal-body border-0 fs-14 pt-0">
+                    <p class="mb-0 text-dark">
+                        <span class="text-main">سرویس آی پی ثابت</span>
+                        همانطور که از نامش پیداست یکی از پر سرعت ترین سرویس های مجموعه آنجلا می باشد.
+                     </p>
+                     <p class="text-dark mb-0">
+                         این سرویس با پینگ پایین تر و استفاده از روش <span class="text-main">تانلینگ</span> بین سرورهای ایران و خارج باعث ایجاد کانکشن قوی و پایدارتر از سایر سرویس ها شده است.
+                     </p>
+                     <p class="text-dark">
+                       سرویس آی پی ثابت <span class="text-main">مناسب ترید، بازی های آنلاین، صرافی های خارجی با تضمین تغییر نکردن آی پی آماده است.</span> شما می توانید برای شارژ سرویس متناسب بسته های خود را از منوی سرویس انتخاب کنید و خریداری نمایید. اگر لینک سابسکرایب شما منقضی شد جهت آپدیت آن می توانید از <span class="text-main">لینک سابسکرایب</span> استفاده کنید.
+                     </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- more modal -->
+    <div class="modal fade" id="more" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-5 shadow-main">
+                <div class="modal-header border-0 pb-0">
+                    <svg class="cursor-pointer" data-bs-dismiss="modal" aria-label="Close" width="18" height="18"
+                        viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM4.29289 13.7071C3.90237 13.3166 3.90237 12.6834 4.29289 12.2929L7.58579 9L4.29289 5.70711C3.90237 5.31658 3.90237 4.68342 4.29289 4.29289C4.68342 3.90237 5.31658 3.90237 5.70711 4.29289L9 7.58579L12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289C14.0976 4.68342 14.0976 5.31658 13.7071 5.70711L10.4142 9L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L9 10.4142L5.70711 13.7071C5.31658 14.0976 4.68342 14.0976 4.29289 13.7071Z"
+                            fill="#696CFF" />
+                    </svg>
+                </div>
+                <div class="modal-body border-0">
+                    <div class="border border-secondary mb-4 mx-2 mx-sm-5">
+                        <div class="row mx-0 bg-main text-white fs-14 text-center py-2 fw-bold">
+                            <div class="col-6">قیمت پایه</div>
+                            <div class="col-6">جزئیات</div>
+                        </div>
+                        <div class="row mx-0 bg-white text-dark fs-14 text-center py-2 fw-bold">
+                            <div class="col-6">هر گیگ 2500</div>
+                            <div class="col-6">تک لینک همه اپراتورها</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- menu overlay -->
+    <div id="menuOverlay"></div>
+
+    <main class="d-flex">
+        <!-- sidebar -->
+        <aside class="p-3">
+            <div>
+                <img alt="logo" src="../assets/img/logo-AVX 3.png" class="img-fluid mx-auto d-block">
+                <p class="text-center fs-22 font-bold text-main2 mb-0">AVX</p>
+            </div>
+            <ul class="list-unstyled p-0 m-0 mt-5">
+                <li class="position-relative">
+                    <a class="d-flex align-items-center gap-2 text-gray rounded-6 p-3 py-2">
+                       <img alt="img" src="../assets/img/Subtract.png" class="flex-shrink-0">
+                       <p class="mb-0">پروفایل</p>
+                    </a>
+                    <svg class="position-absolute transition opacity-none top-0 bottom-0 h-00 -left-16 my-auto d-block" width="4" viewBox="0 0 4 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4 36C4 38.2091 2.20914 40 0 40L-3.49691e-06 3.49691e-07C2.20914 1.56562e-07 4 1.79086 4 4L4 36Z" fill="#696CFF"/>
+                    </svg>
+                </li>
+                <li class="active">
+                  <div class="position-relative rounded-6 dropdownBtn transition">
+                   <a class="d-flex align-items-center gap-2 text-gray rounded-6 p-3 py-2">
+                    <svg class="flex-shrink-0" width="16" height="21" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.5 3C12.9045 3 13.6067 3 14.1111 3.33706C14.3295 3.48298 14.517 3.67048 14.6629 3.88886C15 4.39331 15 5.09554 15 6.5V16C15 17.8856 15 18.8284 14.4142 19.4142C13.8284 20 12.8856 20 11 20H5C3.11438 20 2.17157 20 1.58579 19.4142C1 18.8284 1 17.8856 1 16V6.5C1 5.09554 1 4.39331 1.33706 3.88886C1.48298 3.67048 1.67048 3.48298 1.88886 3.33706C2.39331 3 3.09554 3 4.5 3" stroke="#697A8D" stroke-width="2"/>
+                      <path d="M5 3C5 1.89543 5.89543 1 7 1H9C10.1046 1 11 1.89543 11 3C11 4.10457 10.1046 5 9 5H7C5.89543 5 5 4.10457 5 3Z" stroke="#697A8D" stroke-width="2"/>
+                      <path d="M5 10L11 10" stroke="#697A8D" stroke-width="2" stroke-linecap="round"/>
+                      <path d="M5 14L9 14" stroke="#697A8D" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                       <p class="mb-0">سرویس ها</p>
+                       <img alt="img" src="../assets/img/arrow-down.svg" class="flex-shrink-0 me-auto">
+                    </a>
+                    <svg class="position-absolute transition opacity-none top-0 bottom-0 h-00 -left-16 my-auto d-block" width="4" viewBox="0 0 4 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4 36C4 38.2091 2.20914 40 0 40L-3.49691e-06 3.49691e-07C2.20914 1.56562e-07 4 1.79086 4 4L4 36Z" fill="#696CFF"/>
+                    </svg>
+                  </div>
+                  <ul class="list-unstyled m-0 pe-4 dropdownContent">
+                   <li class="active">
+                       <a class="d-flex align-items-center gap-2 text-gray rounded-6 px-3 py-2">
+                        <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M6.09766 7L6.09766 13" stroke="#697A8D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M10.1797 9V13" stroke="#697A8D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M14.2578 5V13" stroke="#697A8D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <rect x="1" y="1" width="18.3571" height="16" rx="2" stroke="#697A8D" stroke-width="2"/>
+                          </svg>
+                           <p class="mb-0">سرویس های حجمی</p>
+                       </a>
+                   </li>
+                   <li>
+                       <a class="d-flex align-items-center gap-2 text-gray rounded-6 px-3 py-2">
+                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8.06319 3.99351C8.88394 1.99784 9.29432 1 10 1C10.7057 1 11.1161 1.99784 11.9368 3.99351L11.975 4.08644C12.4387 5.2139 12.6706 5.77762 13.1431 6.12027C13.6156 6.46291 14.2358 6.51709 15.4764 6.62545L15.7006 6.64504C17.7309 6.82238 18.746 6.91105 18.9633 7.54098C19.1805 8.17091 18.4266 8.83988 16.9188 10.1778L16.4156 10.6243C15.6523 11.3016 15.2707 11.6403 15.0928 12.0841C15.0597 12.1669 15.0321 12.2517 15.0103 12.338C14.8933 12.8007 15.0051 13.292 15.2286 14.2745L15.2982 14.5804C15.7089 16.3861 15.9143 17.2889 15.5557 17.6784C15.4217 17.8239 15.2476 17.9287 15.0541 17.9802C14.5364 18.1179 13.8013 17.5337 12.3312 16.3654C11.3659 15.5981 10.8832 15.2145 10.329 15.1282C10.1111 15.0943 9.88894 15.0943 9.67097 15.1282C9.11681 15.2145 8.63414 15.5981 7.66881 16.3654C6.1987 17.5337 5.46364 18.1179 4.9459 17.9802C4.75244 17.9287 4.57828 17.8239 4.44428 17.6784C4.08569 17.2889 4.29107 16.3861 4.70183 14.5804L4.7714 14.2745C4.99491 13.292 5.10666 12.8007 4.98974 12.338C4.96793 12.2517 4.94035 12.1669 4.90717 12.0841C4.72929 11.6403 4.34767 11.3016 3.58441 10.6243L3.08119 10.1778C1.57342 8.83988 0.819534 8.17091 1.03675 7.54098C1.25396 6.91105 2.2691 6.82238 4.29938 6.64504L4.52365 6.62545C5.76417 6.51709 6.38443 6.46291 6.85694 6.12027C7.32945 5.77762 7.56129 5.2139 8.02497 4.08644L8.06319 3.99351Z" stroke="#697A8D" stroke-width="2"/>
+                          </svg>
+                           <p class="mb-0">سرویس های نامحدود</p>
+                       </a>
+                   </li>
+                   <li>
+                       <a class="d-flex align-items-center gap-2 text-gray rounded-6 px-3 py-2">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M14.5 3C16.3057 3 17.2086 3 17.8572 3.33706C18.138 3.48298 18.379 3.67048 18.5666 3.88886C19 4.39331 19 5.09554 19 6.5V16C19 17.8856 19 18.8284 18.2468 19.4142C17.4937 20 16.2815 20 13.8571 20H6.14286C3.71849 20 2.50631 20 1.75315 19.4142C1 18.8284 1 17.8856 1 16V6.5C1 5.09554 1 4.39331 1.43336 3.88886C1.62097 3.67048 1.86204 3.48298 2.14282 3.33706C2.79139 3 3.69426 3 5.5 3" stroke="#697A8D" stroke-width="2"/>
+                          <path d="M6.14062 3C6.14062 1.89543 7.29189 1 8.71205 1H11.2835C12.7036 1 13.8549 1.89543 13.8549 3C13.8549 4.10457 12.7036 5 11.2835 5H8.71205C7.29189 5 6.14062 4.10457 6.14062 3Z" stroke="#697A8D" stroke-width="2"/>
+                          <path d="M6.14062 10L13.8549 10" stroke="#697A8D" stroke-width="2" stroke-linecap="round"/>
+                          <path d="M6.14062 14L11.2835 14" stroke="#697A8D" stroke-width="2" stroke-linecap="round"/>
+                          </svg>
+                           <p class="mb-0">IP ثابت</p>
+                       </a>
+                   </li>
+                  </ul>
+               </li>
+                <li>
+                   <div class="position-relative rounded-6 dropdownBtn transition">
+                    <a class="d-flex align-items-center gap-2 text-gray rounded-6 p-3 py-2">
+                        <svg class="flex-shrink-0" width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <rect x="1" y="1" width="18" height="13" rx="2" stroke="#697A8D" stroke-width="2"/>
+                         <path d="M5 10H5.01" stroke="#697A8D" stroke-width="2" stroke-linecap="round"/>
+                         <path d="M2 6H19" stroke="#697A8D" stroke-width="2" stroke-linecap="round"/>
+                         </svg>
+                        <p class="mb-0">مالی</p>
+                        <img alt="img" src="../assets/img/arrow-down.svg" class="flex-shrink-0 me-auto">
+                     </a>
+                     <svg class="position-absolute transition opacity-none top-0 bottom-0 h-00 -left-16 my-auto d-block" width="4" viewBox="0 0 4 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path fill-rule="evenodd" clip-rule="evenodd" d="M4 36C4 38.2091 2.20914 40 0 40L-3.49691e-06 3.49691e-07C2.20914 1.56562e-07 4 1.79086 4 4L4 36Z" fill="#696CFF"/>
+                     </svg>
+                   </div>
+                   <ul class="list-unstyled m-0 pe-4 dropdownContent">
+                    <li>
+                        <a class="d-flex align-items-center gap-2 text-gray rounded-6 px-3 py-2">
+                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.87868 0.87868C0 1.75736 0 3.17157 0 6V8C0 10.8284 0 12.2426 0.87868 13.1213C1.75736 14 3.17157 14 6 14H12.8889C12.9921 14 13.0436 14 13.0873 13.9987C14.6757 13.9525 15.9525 12.6757 15.9987 11.0873C16 11.0436 16 10.9921 16 10.8889H11.1333C9.84467 10.8889 8.8 9.84422 8.8 8.55556C8.8 7.26689 9.84467 6.22222 11.1333 6.22222H16V6C16 3.17157 16 1.75736 15.1213 0.87868C14.2426 0 12.8284 0 10 0H6C3.17157 0 1.75736 0 0.87868 0.87868ZM4 2.88889C3.44772 2.88889 3 3.3366 3 3.88889C3 4.44117 3.44772 4.88889 4 4.88889H6.4C6.95228 4.88889 7.4 4.44117 7.4 3.88889C7.4 3.3366 6.95228 2.88889 6.4 2.88889H4Z" fill="#697A8D"/>
+                            </svg>
+                            <p class="mb-0">کیف پول</p>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a class="d-flex align-items-center gap-2 text-gray rounded-6 px-3 py-2">
+                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.5 14.9111V13.5556H5.75L6.5 12.2L18 11.0909L20 3.69697H4.625L3.75 0H0V1.23232H2.75L5.375 11.5838L3.75 14.7879V16.6364C3.75 17.6222 4.625 18.4848 5.625 18.4848C6.625 18.4848 7.5 17.6222 7.5 16.6364C7.5 15.6505 6.625 14.7879 5.625 14.7879H15V16.6364C15 17.6222 15.875 18.4848 16.875 18.4848C17.875 18.4848 18.75 17.6222 18.75 16.6364C18.75 15.7737 18.25 15.1576 17.5 14.9111Z" fill="#697A8D"/>
+                            </svg>
+                            <p class="mb-0">خرید</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-items-center gap-2 text-gray rounded-6 px-3 py-2">
+                            <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.5 4C16.9045 4 17.6067 4 18.1111 4.33706C18.3295 4.48298 18.517 4.67048 18.6629 4.88886C19 5.39331 19 6.09554 19 7.5V17C19 18.8856 19 19.8284 18.4142 20.4142C17.8284 21 16.8856 21 15 21H9C7.11438 21 6.17157 21 5.58579 20.4142C5 19.8284 5 18.8856 5 17V7.5C5 6.09554 5 5.39331 5.33706 4.88886C5.48298 4.67048 5.67048 4.48298 5.88886 4.33706C6.39331 4 7.09554 4 8.5 4" stroke="#697A8D" stroke-width="2"/>
+                                <path d="M9 4C9 2.89543 9.89543 2 11 2H13C14.1046 2 15 2.89543 15 4C15 5.10457 14.1046 6 13 6H11C9.89543 6 9 5.10457 9 4Z" stroke="#697A8D" stroke-width="2"/>
+                                <path d="M9 11L15 11" stroke="#697A8D" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M9 15L13 15" stroke="#697A8D" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p class="mb-0">گزارشات</p>
+                        </a>
+                    </li>
+                   </ul>
+                </li>
+                <li>
+                  <div class="position-relative rounded-6 dropdownBtn transition">
+                   <a class="d-flex align-items-center gap-2 text-gray rounded-6 p-3 py-2">
+                       <img alt="icon" src="../assets/img/Untitled-1 2.png" class="img-fluid flex-shrink-0">
+                       <p class="mb-0">بات</p>
+                       <img alt="img" src="../assets/img/arrow-down.svg" class="flex-shrink-0 me-auto">
+                    </a>
+                    <svg class="position-absolute transition opacity-none top-0 bottom-0 h-00 -left-16 my-auto d-block" width="4" viewBox="0 0 4 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4 36C4 38.2091 2.20914 40 0 40L-3.49691e-06 3.49691e-07C2.20914 1.56562e-07 4 1.79086 4 4L4 36Z" fill="#696CFF"/>
+                    </svg>
+                  </div>
+                  <ul class="list-unstyled m-0 pe-4 dropdownContent">
+                   <li>
+                       <a class="d-flex align-items-center gap-2 text-gray rounded-6 px-3 py-2">
+                           <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                               <path fill-rule="evenodd" clip-rule="evenodd" d="M0.87868 0.87868C0 1.75736 0 3.17157 0 6V8C0 10.8284 0 12.2426 0.87868 13.1213C1.75736 14 3.17157 14 6 14H12.8889C12.9921 14 13.0436 14 13.0873 13.9987C14.6757 13.9525 15.9525 12.6757 15.9987 11.0873C16 11.0436 16 10.9921 16 10.8889H11.1333C9.84467 10.8889 8.8 9.84422 8.8 8.55556C8.8 7.26689 9.84467 6.22222 11.1333 6.22222H16V6C16 3.17157 16 1.75736 15.1213 0.87868C14.2426 0 12.8284 0 10 0H6C3.17157 0 1.75736 0 0.87868 0.87868ZM4 2.88889C3.44772 2.88889 3 3.3366 3 3.88889C3 4.44117 3.44772 4.88889 4 4.88889H6.4C6.95228 4.88889 7.4 4.44117 7.4 3.88889C7.4 3.3366 6.95228 2.88889 6.4 2.88889H4Z" fill="#697A8D"/>
+                           </svg>
+                           <p class="mb-0">کیف پول</p>
+                       </a>
+                   </li>
+                   <li>
+                       <a class="d-flex align-items-center gap-2 text-gray rounded-6 px-3 py-2">
+                           <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                               <path d="M17.5 14.9111V13.5556H5.75L6.5 12.2L18 11.0909L20 3.69697H4.625L3.75 0H0V1.23232H2.75L5.375 11.5838L3.75 14.7879V16.6364C3.75 17.6222 4.625 18.4848 5.625 18.4848C6.625 18.4848 7.5 17.6222 7.5 16.6364C7.5 15.6505 6.625 14.7879 5.625 14.7879H15V16.6364C15 17.6222 15.875 18.4848 16.875 18.4848C17.875 18.4848 18.75 17.6222 18.75 16.6364C18.75 15.7737 18.25 15.1576 17.5 14.9111Z" fill="#697A8D"/>
+                           </svg>
+                           <p class="mb-0">خرید</p>
+                       </a>
+                   </li>
+                   <li>
+                       <a class="d-flex align-items-center gap-2 text-gray rounded-6 px-3 py-2">
+                           <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                               <path d="M15.5 4C16.9045 4 17.6067 4 18.1111 4.33706C18.3295 4.48298 18.517 4.67048 18.6629 4.88886C19 5.39331 19 6.09554 19 7.5V17C19 18.8856 19 19.8284 18.4142 20.4142C17.8284 21 16.8856 21 15 21H9C7.11438 21 6.17157 21 5.58579 20.4142C5 19.8284 5 18.8856 5 17V7.5C5 6.09554 5 5.39331 5.33706 4.88886C5.48298 4.67048 5.67048 4.48298 5.88886 4.33706C6.39331 4 7.09554 4 8.5 4" stroke="#697A8D" stroke-width="2"/>
+                               <path d="M9 4C9 2.89543 9.89543 2 11 2H13C14.1046 2 15 2.89543 15 4C15 5.10457 14.1046 6 13 6H11C9.89543 6 9 5.10457 9 4Z" stroke="#697A8D" stroke-width="2"/>
+                               <path d="M9 11L15 11" stroke="#697A8D" stroke-width="2" stroke-linecap="round"/>
+                               <path d="M9 15L13 15" stroke="#697A8D" stroke-width="2" stroke-linecap="round"/>
+                           </svg>
+                           <p class="mb-0">گزارشات</p>
+                       </a>
+                   </li>
+                  </ul>
+               </li>
+               <li class="position-relative">
+                <a class="d-flex align-items-center gap-2 text-gray rounded-6 p-3 py-2">
+                  <svg class="flex-shrink-0" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.6032 13.4248L8.4722 15.5363C6.90295 17.0912 4.37032 17.0796 2.81541 15.5103V15.5103C1.2605 13.9411 1.27213 11.4084 2.84139 9.85354L4.97243 7.74198" stroke="#697A8D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12.05 6.36039L6.36719 11.9912" stroke="#697A8D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13.4455 10.6097L15.5765 8.49818C17.1458 6.94327 17.1574 4.41064 15.6025 2.84139V2.84139C14.0476 1.27213 11.515 1.2605 9.94572 2.81541L7.81468 4.92696" stroke="#697A8D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                   <p class="mb-0">زیر مجموعه ها</p>
+                </a>
+                <svg class="position-absolute transition opacity-none top-0 bottom-0 h-00 -left-16 my-auto d-block" width="4" viewBox="0 0 4 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 36C4 38.2091 2.20914 40 0 40L-3.49691e-06 3.49691e-07C2.20914 1.56562e-07 4 1.79086 4 4L4 36Z" fill="#696CFF"/>
+                </svg>
+            </li>
+                <li class="position-relative">
+                    <a class="d-flex align-items-center gap-2 text-gray rounded-6 p-3 py-2">
+                       <img alt="img" src="../assets/img/Subtract.svg" class="flex-shrink-0">
+                       <p class="mb-0">گزارش قطعی/سرویس اضطراری</p>
+                    </a>
+                    <svg class="position-absolute transition opacity-none top-0 bottom-0 h-00 -left-16 my-auto d-block" width="4" viewBox="0 0 4 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4 36C4 38.2091 2.20914 40 0 40L-3.49691e-06 3.49691e-07C2.20914 1.56562e-07 4 1.79086 4 4L4 36Z" fill="#696CFF"/>
+                    </svg>
+                </li>
+                <li class="position-relative">
+                    <a class="d-flex align-items-center gap-2 text-gray rounded-6 p-3 py-2">
+                       <img alt="img" src="../assets/img/suport-icon 1.svg" class="flex-shrink-0">
+                       <p class="mb-0">پشتیبانی</p>
+                    </a>
+                    <svg class="position-absolute transition opacity-none top-0 bottom-0 h-00 -left-16 my-auto d-block" width="4" viewBox="0 0 4 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4 36C4 38.2091 2.20914 40 0 40L-3.49691e-06 3.49691e-07C2.20914 1.56562e-07 4 1.79086 4 4L4 36Z" fill="#696CFF"/>
+                    </svg>
+                </li>
+                <li class="position-relative">
+                    <a class="d-flex align-items-center gap-2 text-gray rounded-6 p-3 py-2">
+                       <img alt="img" src="../assets/img/Group 5.svg" class="flex-shrink-0">
+                       <p class="mb-0">خروج</p>
+                    </a>
+                    <svg class="position-absolute transition opacity-none top-0 bottom-0 h-00 -left-16 my-auto d-block" width="4" viewBox="0 0 4 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4 36C4 38.2091 2.20914 40 0 40L-3.49691e-06 3.49691e-07C2.20914 1.56562e-07 4 1.79086 4 4L4 36Z" fill="#696CFF"/>
+                    </svg>
+                </li>
+            </ul>
+         </aside>
+        <div class="flex-grow-1 bg-white h-100vh overflow-auto dashboardContent">
+            <div class="p-md-4">
+                <form
+                    class="rounded-6 shadow-sm py-3 px-xl-5 px-4 d-flex align-items-center justify-content-between gap-3">
+                    <img alt="img" src="../assets/img/IMG_20240101_192708_547 1.png"
+                        class="img-fluid d-md-none cursor-pointer d-block w-35 h-35 rounded-circle">
+                    <div class="flex-grow-1 d-md-flex d-none gap-2">
+                        <img alt="img" src="../assets/img/Icon.svg" class="img-fluid cursor-pointer">
+                        <input class="border-0 bg-white outline-none fs-14 w-100"
+                            placeholder="کاربر مورد نظر را جستجو کنید">
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <a class="d-flex align-items-center gap-2">
+                            <p class="mb-0 fs-14 fw-bold text-dark">yakoob</p>
+                            <img alt="img" src="../assets/img/Group 8609.png"
+                                class="img-fluid d-block w-42 h-42 rounded-circle">
+                        </a>
+                        <div class="cursor-pointer position-relative">
+                            <span
+                                class="d-flex align-items-center justify-content-center rounded-circle -top-4 -right-9 ms-3 bg-danger text-white font-bold position-absolute fs-12 w-18 h-18">4</span>
+                            <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14.6852 10.4274V7.2C14.6852 4.3047 12.7187 1.8657 10.0547 1.1322C9.79096 0.468 9.14656 0 8.38516 0C7.62376 0 6.97936 0.468 6.71566 1.1322C4.05166 1.8666 2.08516 4.3047 2.08516 7.2V10.4274L0.548856 11.9637C0.379656 12.132 0.285156 12.3606 0.285156 12.6V14.4C0.285156 14.8977 0.687456 15.3 1.18516 15.3H15.5852C16.0829 15.3 16.4852 14.8977 16.4852 14.4V12.6C16.4852 12.3606 16.3907 12.132 16.2215 11.9637L14.6852 10.4274ZM14.6852 13.5H2.08516V12.9726L3.62146 11.4363C3.79066 11.268 3.88516 11.0394 3.88516 10.8V7.2C3.88516 4.7187 5.90386 2.7 8.38516 2.7C10.8665 2.7 12.8852 4.7187 12.8852 7.2V10.8C12.8852 11.0394 12.9797 11.268 13.1489 11.4363L14.6852 12.9726V13.5ZM8.38516 18C9.56506 18 10.5515 17.2494 10.9214 16.2H5.84896C6.21886 17.2494 7.20526 18 8.38516 18Z"
+                                    fill="#435971" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14.6852 10.4274V7.2C14.6852 4.3047 12.7187 1.8657 10.0547 1.1322C9.79096 0.468 9.14656 0 8.38516 0C7.62376 0 6.97936 0.468 6.71566 1.1322C4.05166 1.8666 2.08516 4.3047 2.08516 7.2V10.4274L0.548856 11.9637C0.379656 12.132 0.285156 12.3606 0.285156 12.6V14.4C0.285156 14.8977 0.687456 15.3 1.18516 15.3H15.5852C16.0829 15.3 16.4852 14.8977 16.4852 14.4V12.6C16.4852 12.3606 16.3907 12.132 16.2215 11.9637L14.6852 10.4274ZM14.6852 13.5H2.08516V12.9726L3.62146 11.4363C3.79066 11.268 3.88516 11.0394 3.88516 10.8V7.2C3.88516 4.7187 5.90386 2.7 8.38516 2.7C10.8665 2.7 12.8852 4.7187 12.8852 7.2V10.8C12.8852 11.0394 12.9797 11.268 13.1489 11.4363L14.6852 12.9726V13.5ZM8.38516 18C9.56506 18 10.5515 17.2494 10.9214 16.2H5.84896C6.21886 17.2494 7.20526 18 8.38516 18Z"
+                                    fill="white" fill-opacity="0.2" />
+                            </svg>
+                        </div>
+                        <div class="cursor-pointer">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.8672 9.9405C16.2579 10.1025 15.6288 10.1844 14.9979 10.1844C13.0764 10.1844 11.2719 9.4374 9.91651 8.082C8.10931 6.2748 7.39741 3.6117 8.05891 1.1313C8.14171 0.820798 8.05261 0.489598 7.82581 0.262798C7.59901 0.0359977 7.26871 -0.0558023 6.95641 0.0305977C5.42461 0.440098 4.02781 1.2438 2.91631 2.3544C-0.591894 5.8626 -0.591894 11.5731 2.91631 15.0831C4.61641 16.7832 6.87721 17.7201 9.28111 17.7201C11.685 17.7201 13.9449 16.7841 15.6441 15.084C16.7565 13.9707 17.5611 12.5721 17.9688 11.0421C18.0516 10.7316 17.9616 10.4004 17.7348 10.1736C17.508 9.9459 17.1759 9.8559 16.8672 9.9405ZM14.3724 13.8114C13.0125 15.1713 11.2044 15.9201 9.28201 15.9201C7.35871 15.9201 5.55061 15.1704 4.18981 13.8105C1.38361 11.0034 1.38361 6.435 4.18981 3.6279C4.73161 3.0861 5.35801 2.6361 6.04381 2.2932C5.84401 4.8897 6.77641 7.488 8.64481 9.3564C10.506 11.2185 13.0791 12.1644 15.708 11.9583C15.3642 12.6414 14.9133 13.2687 14.3724 13.8114Z"
+                                    fill="#435971" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.8672 9.9405C16.2579 10.1025 15.6288 10.1844 14.9979 10.1844C13.0764 10.1844 11.2719 9.4374 9.91651 8.082C8.10931 6.2748 7.39741 3.6117 8.05891 1.1313C8.14171 0.820798 8.05261 0.489598 7.82581 0.262798C7.59901 0.0359977 7.26871 -0.0558023 6.95641 0.0305977C5.42461 0.440098 4.02781 1.2438 2.91631 2.3544C-0.591894 5.8626 -0.591894 11.5731 2.91631 15.0831C4.61641 16.7832 6.87721 17.7201 9.28111 17.7201C11.685 17.7201 13.9449 16.7841 15.6441 15.084C16.7565 13.9707 17.5611 12.5721 17.9688 11.0421C18.0516 10.7316 17.9616 10.4004 17.7348 10.1736C17.508 9.9459 17.1759 9.8559 16.8672 9.9405ZM14.3724 13.8114C13.0125 15.1713 11.2044 15.9201 9.28201 15.9201C7.35871 15.9201 5.55061 15.1704 4.18981 13.8105C1.38361 11.0034 1.38361 6.435 4.18981 3.6279C4.73161 3.0861 5.35801 2.6361 6.04381 2.2932C5.84401 4.8897 6.77641 7.488 8.64481 9.3564C10.506 11.2185 13.0791 12.1644 15.708 11.9583C15.3642 12.6414 14.9133 13.2687 14.3724 13.8114Z"
+                                    fill="white" fill-opacity="0.2" />
+                            </svg>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="p-sm-4 p-3 pb-5">
+                <div class="d-flex d-md-none align-items-center justify-content-between">
+                    <div class="cursor-pointer">
+                        <svg id="hamicon" width="25" height="16" viewBox="0 0 25 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 1L1 1" stroke="#696CFF" stroke-width="2" stroke-linecap="round" />
+                            <path d="M24 7.5L1 7.5" stroke="#696CFF" stroke-width="2" stroke-linecap="round" />
+                            <path d="M24 14.5L1 14.5" stroke="#696CFF" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <svg data-bs-toggle="modal" data-bs-target="#description" class="cursor-pointer" width="18"
+                            height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 15C10 15.5523 9.55229 16 9 16C8.44771 16 8 15.5523 8 15C8 14.4477 8.44771 14 9 14C9.55229 14 10 14.4477 10 15ZM9 2C6.79086 2 5 3.79086 5 6H7C7 4.89543 7.89543 4 9 4H9.09431C10.1468 4 11 4.85321 11 5.90569V6.41886C11 6.93267 10.6712 7.38884 10.1838 7.55132C8.87964 7.98603 8 9.20647 8 10.5811V13H10V10.5811C10 10.0673 10.3288 9.61116 10.8162 9.44868C12.1204 9.01397 13 7.79353 13 6.41886V5.90569C13 3.74864 11.2514 2 9.09431 2H9Z"
+                                fill="#696CFF" />
+                        </svg>
+                        <img alt="img" src="../assets/img/Icon.svg" class="img-fluid cursor-pointer">
+                    </div>
+                </div>
+                <div>
+                    <div class="rounded-6 d-none d-md-block shadow-sm py-3 px-lg-5 px-4 mb-4 mt-4 mt-md-0">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.16" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 0C2.6916 0 0 2.90835 0 6.48317C0 10.058 2.6916 12.9663 6 12.9663C9.3084 12.9663 12 10.058 12 6.48317C12 2.90835 9.3084 0 6 0Z"
+                                    fill="#696CFF" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 3.2417C4.3458 3.2417 3 4.69588 3 6.48329C3 8.2707 4.3458 9.72487 6 9.72487C7.6542 9.72487 9 8.2707 9 6.48329C9 4.69588 7.6542 3.2417 6 3.2417Z"
+                                    fill="#696CFF" />
+                            </svg>
+                            <p class="mb-0 fw-bold fs-18 text-main2">توضیحات</p>
+                        </div>
+                        <p class="mb-0 text-dark">
+                           <span class="text-main">سرویس آی پی ثابت</span>
+                           همانطور که از نامش پیداست یکی از پر سرعت ترین سرویس های مجموعه آنجلا می باشد.
+                        </p>
+                        <p class="text-dark mb-0">
+                            این سرویس با پینگ پایین تر و استفاده از روش <span class="text-main">تانلینگ</span> بین سرورهای ایران و خارج باعث ایجاد کانکشن قوی و پایدارتر از سایر سرویس ها شده است.
+                        </p>
+                        <p class="text-dark">
+                          سرویس آی پی ثابت <span class="text-main">مناسب ترید، بازی های آنلاین، صرافی های خارجی با تضمین تغییر نکردن آی پی آماده است.</span> شما می توانید برای شارژ سرویس متناسب بسته های خود را از منوی سرویس انتخاب کنید و خریداری نمایید. اگر لینک سابسکرایب شما منقضی شد جهت آپدیت آن می توانید از <span class="text-main">لینک سابسکرایب</span> استفاده کنید.
+                        </p>
+                    </div>
+                    <div
+                        class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-md-start gap-sm-5 gap-4 mt-5 pt-5 pt-sm-0">
+                        <div class="d-flex align-items-center gap-2">
+                            <svg class="flex-shrink-0" width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.16" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 0C2.6916 0 0 2.90835 0 6.48317C0 10.058 2.6916 12.9663 6 12.9663C9.3084 12.9663 12 10.058 12 6.48317C12 2.90835 9.3084 0 6 0Z"
+                                    fill="#696CFF" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 3.2417C4.3458 3.2417 3 4.69588 3 6.48329C3 8.2707 4.3458 9.72487 6 9.72487C7.6542 9.72487 9 8.2707 9 6.48329C9 4.69588 7.6542 3.2417 6 3.2417Z"
+                                    fill="#696CFF" />
+                            </svg>
+                            <p class="mb-0 fw-bold text-main2">حجم باقی مانده: 200.00 </p>
+                        </div>
+                        <div class="h-19 h-sm-6 w-sm-100 flex-grow-1 rounded-pill bg-gray position-relative"> 
+                            <div class="h-100 bg-main shadow w-75 rounded-pill me-auto"></div>
+                        </div>
+                    </div>
+                    <p class="w-175 h-28 rounded-3 bg-main fs-12 text-white fw-bold d-none d-sm-flex align-items-center justify-content-center mt-5 mx-auto">کاربران آی پی حجمی</p>
+                    <!-- table -->
+                    <div class="mt-4">
+                        <div class="fs-12 fs-sm-10 fw-bold row mx-0 px-2 py-3 border-bottom text-center">
+                            <div class="col-xl-1 col-2 d-flex align-items-center justify-content-center">عکس</div>
+                            <div class="col-xl-1 col-3 d-flex align-items-center justify-content-center">نام کاربری</div>
+                            <div class="col-xl-1 col-2 d-flex align-items-center justify-content-center">SUB</div>
+                            <div class="col-xl-1 col-3 d-flex align-items-center justify-content-center">فعالسازی</div>
+                            <div class="col-3 d-xl-flex d-none align-items-center justify-content-center">حجم باقی مانده</div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">ویرایش کاربر</div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">اطلاعات</div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">ریست کاربر</div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">کد QR</div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">حذف</div>
+                            <div class="col-2 d-xl-none d-flex align-items-center justify-content-center">جزئیات</div>
+                        </div>
+                        <div
+                            class="bg-white mb-1 border-bottom fs-12 fs-sm-10 fw-bold row mx-0 px-2 py-3 text-dark text-center">
+                            <div class="col-xl-1 col-2 d-flex align-items-center gap-sm-3 gap-1">
+                                <p class="mb-0">1-</p>
+                                <img alt="img" src="../assets/img/photo-1568602471122-7832951cc4c5.png"
+                                    class="w-35 h-35 d-block rounded-circle">
+                            </div>
+                            <div class="col-xl-1 col-3 d-flex align-items-center justify-content-center">Reza Kazemi
+                            </div>
+                            <div class="col-xl-1 col-2 d-flex align-items-center justify-content-center">
+                                <a
+                                    class="mb-0 cursor-pointer rounded-5 bg-main text-white fw-bold h-28 d-inline-flex align-items-center justify-content-center px-2">SUB</a>
+                            </div>
+                            <div class="col-xl-1 col-3 d-flex align-items-center justify-content-center"> 
+                                <div class="form-check form-switch p-0 d-flex align-items-center justify-content-center">
+                                    <input class="form-check-input mx-auto cursor-pointer w-48 w-sm-37 h-19 h-sm-15" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                  </div>
+                            </div>
+                            <div class="col-3 d-xl-flex d-none align-items-center justify-content-center"> 
+                             <div class="h-19 w-100 rounded-pill bg-gray position-relative"> 
+                              <div class="h-100 bg-main shadow w-75 rounded-pill me-auto"></div>
+                              <p class="mb-0 text-white fw-bold fs-10 position-absolute z-10 start-0 top-0 bottom-0 mt-2px ms-3">200 گیگابایت</p>
+                             </div>
+                            </div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">
+                                <svg class="cursor-pointer" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1208 6.96758L15.9168 5.17157C16.462 4.62632 16.7346 4.3537 16.8804 4.0596C17.1577 3.50005 17.1577 2.8431 16.8804 2.28354C16.7346 1.98945 16.462 1.71682 15.9168 1.17157C15.3715 0.626323 15.0989 0.353698 14.8048 0.207962C14.2452 -0.0693207 13.5883 -0.0693207 13.0287 0.207962C12.7346 0.353698 12.462 0.626323 11.9168 1.17157L10.0981 2.99023C11.062 4.64083 12.4481 6.01639 14.1208 6.96758ZM8.64365 4.44469L1.77314 11.3152C1.34808 11.7403 1.13555 11.9528 0.995818 12.2139C0.856084 12.475 0.797138 12.7697 0.679248 13.3592L0.0638519 16.4361C-0.00267025 16.7687 -0.0359313 16.9351 0.0586767 17.0297C0.153285 17.1243 0.31959 17.091 0.6522 17.0245L3.72918 16.4091C4.31863 16.2912 4.61336 16.2323 4.87446 16.0925C5.13555 15.9528 5.34808 15.7403 5.77315 15.3152L12.6625 8.42579C11.0409 7.41014 9.66919 6.04785 8.64365 4.44469Z" fill="#696CFF"/>
+                                </svg>
+                            </div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">
+                                <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 5C16.9045 5 17.6067 5 18.1111 5.33706C18.3295 5.48298 18.517 5.67048 18.6629 5.88886C19 6.39331 19 7.09554 19 8.5V18C19 19.8856 19 20.8284 18.4142 21.4142C17.8284 22 16.8856 22 15 22H9C7.11438 22 6.17157 22 5.58579 21.4142C5 20.8284 5 19.8856 5 18V8.5C5 7.09554 5 6.39331 5.33706 5.88886C5.48298 5.67048 5.67048 5.48298 5.88886 5.33706C6.39331 5 7.09554 5 8.5 5" stroke="#696CFF" stroke-width="2"/>
+                                    <path d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5C15 6.10457 14.1046 7 13 7H11C9.89543 7 9 6.10457 9 5Z" stroke="#696CFF" stroke-width="2"/>
+                                    <path d="M9 12L15 12" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M9 16L13 16" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">
+                                <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 15L10 19L14 23" stroke="#696CFF" stroke-width="2"/>
+                                    <path d="M18.0622 8.5C18.6766 9.56413 19 10.7712 19 12C19 13.2288 18.6766 14.4359 18.0622 15.5C17.4478 16.5641 16.5641 17.4478 15.5 18.0622C14.4359 18.6766 13.2288 19 12 19" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M10 9L14 5L10 1" stroke="#696CFF" stroke-width="2"/>
+                                    <path d="M5.93782 15.5C5.32344 14.4359 5 13.2288 5 12C5 10.7712 5.32344 9.56413 5.93782 8.5C6.5522 7.43587 7.43587 6.5522 8.5 5.93782C9.56413 5.32344 10.7712 5 12 5" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">
+                                <svg class="cursor-pointer" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="20" height="20" fill="url(#pattern0_1_453)"/>
+                                    <defs>
+                                    <pattern id="pattern0_1_453" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_1_453" transform="scale(0.000976562)"/>
+                                    </pattern>
+                                    <image id="image0_1_453" width="1024" height="1024" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAAAAAQACAYAAAB/HSuDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAFiZJREFUeNrs2oGpgjEMhdFGsqzgOILjxiUkYO85G/xJ7Xt89BwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgN+q9AE8XzOOAeBvQCT3v/Pv/AOE+bwr+v5/OAIAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAADArjaCeGUEBBsjwP0Pzj/4/4cUXgAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAACgBEAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAACxrIyDchH9/OQLg/nP/gd+/3z9k8AIAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAAAQAIwAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAGBZGwHhygjA7z/UOALg/gOyeAEAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAEYAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAALCsjSDeGAHg/gP8/gHu5wUAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAAAgABgBAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAMCyNoJTRgCAv3/YPwC38wIAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAAAQAIwAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAGBZG8GZ8O8v+8f5x/7df/Zv/zj/+P07//fzAgAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAjAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAYFkbwanw7x/7t3/fD+4/7N/9j/3D/bwAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAjAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAABY1kYQr4zA/iHUGIH9u/99Pzj/JPECAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAEACMAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAEAAAAAAAAQAAAAAQAAAAAAAB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"/>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">
+                                <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 15L10 12" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M14 15L14 12" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M3 7H21V7C20.0681 7 19.6022 7 19.2346 7.15224C18.7446 7.35523 18.3552 7.74458 18.1522 8.23463C18 8.60218 18 9.06812 18 10V16C18 17.8856 18 18.8284 17.4142 19.4142C16.8284 20 15.8856 20 14 20H10C8.11438 20 7.17157 20 6.58579 19.4142C6 18.8284 6 17.8856 6 16V10C6 9.06812 6 8.60218 5.84776 8.23463C5.64477 7.74458 5.25542 7.35523 4.76537 7.15224C4.39782 7 3.93188 7 3 7V7Z" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M10.0681 3.37059C10.1821 3.26427 10.4332 3.17033 10.7825 3.10332C11.1318 3.03632 11.5597 3 12 3C12.4403 3 12.8682 3.03632 13.2175 3.10332C13.5668 3.17033 13.8179 3.26427 13.9319 3.37059" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="col-2 d-xl-none d-flex align-items-center justify-content-center">
+                                <svg data-bs-toggle="modal" data-bs-target="#more" class="d-xl-none cursor-pointer"
+                                width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 5C10 5.55228 9.55229 6 9 6C8.44771 6 8 5.55228 8 5C8 4.44772 8.44771 4 9 4C9.55229 4 10 4.44772 10 5ZM10 14V8H8V14H10Z"
+                                    fill="#696CFF" />
+                            </svg>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white mb-1 border-bottom fs-12 fs-sm-10 fw-bold row mx-0 px-2 py-3 text-dark text-center">
+                            <div class="col-xl-1 col-2 d-flex align-items-center gap-sm-3 gap-1">
+                                <p class="mb-0">1-</p>
+                                <img alt="img" src="../assets/img/photo-1568602471122-7832951cc4c5.png"
+                                    class="w-35 h-35 d-block rounded-circle">
+                            </div>
+                            <div class="col-xl-1 col-3 d-flex align-items-center justify-content-center">Reza Kazemi
+                            </div>
+                            <div class="col-xl-1 col-2 d-flex align-items-center justify-content-center">
+                                <a
+                                    class="mb-0 cursor-pointer rounded-5 bg-main text-white fw-bold h-28 d-inline-flex align-items-center justify-content-center px-2">SUB</a>
+                            </div>
+                            <div class="col-xl-1 col-3 d-flex align-items-center justify-content-center"> 
+                                <div class="form-check form-switch p-0 d-flex align-items-center justify-content-center">
+                                    <input class="form-check-input mx-auto cursor-pointer w-48 w-sm-37 h-19 h-sm-15" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                  </div>
+                            </div>
+                            <div class="col-3 d-xl-flex d-none align-items-center justify-content-center"> 
+                             <div class="h-19 w-100 rounded-pill bg-gray position-relative"> 
+                              <div class="h-100 bg-main shadow w-75 rounded-pill me-auto"></div>
+                              <p class="mb-0 text-white fw-bold fs-10 position-absolute z-10 start-0 top-0 bottom-0 mt-2px ms-3">200 گیگابایت</p>
+                             </div>
+                            </div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">
+                                <svg class="cursor-pointer" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1208 6.96758L15.9168 5.17157C16.462 4.62632 16.7346 4.3537 16.8804 4.0596C17.1577 3.50005 17.1577 2.8431 16.8804 2.28354C16.7346 1.98945 16.462 1.71682 15.9168 1.17157C15.3715 0.626323 15.0989 0.353698 14.8048 0.207962C14.2452 -0.0693207 13.5883 -0.0693207 13.0287 0.207962C12.7346 0.353698 12.462 0.626323 11.9168 1.17157L10.0981 2.99023C11.062 4.64083 12.4481 6.01639 14.1208 6.96758ZM8.64365 4.44469L1.77314 11.3152C1.34808 11.7403 1.13555 11.9528 0.995818 12.2139C0.856084 12.475 0.797138 12.7697 0.679248 13.3592L0.0638519 16.4361C-0.00267025 16.7687 -0.0359313 16.9351 0.0586767 17.0297C0.153285 17.1243 0.31959 17.091 0.6522 17.0245L3.72918 16.4091C4.31863 16.2912 4.61336 16.2323 4.87446 16.0925C5.13555 15.9528 5.34808 15.7403 5.77315 15.3152L12.6625 8.42579C11.0409 7.41014 9.66919 6.04785 8.64365 4.44469Z" fill="#696CFF"/>
+                                </svg>
+                            </div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">
+                                <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 5C16.9045 5 17.6067 5 18.1111 5.33706C18.3295 5.48298 18.517 5.67048 18.6629 5.88886C19 6.39331 19 7.09554 19 8.5V18C19 19.8856 19 20.8284 18.4142 21.4142C17.8284 22 16.8856 22 15 22H9C7.11438 22 6.17157 22 5.58579 21.4142C5 20.8284 5 19.8856 5 18V8.5C5 7.09554 5 6.39331 5.33706 5.88886C5.48298 5.67048 5.67048 5.48298 5.88886 5.33706C6.39331 5 7.09554 5 8.5 5" stroke="#696CFF" stroke-width="2"/>
+                                    <path d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5C15 6.10457 14.1046 7 13 7H11C9.89543 7 9 6.10457 9 5Z" stroke="#696CFF" stroke-width="2"/>
+                                    <path d="M9 12L15 12" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M9 16L13 16" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">
+                                <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 15L10 19L14 23" stroke="#696CFF" stroke-width="2"/>
+                                    <path d="M18.0622 8.5C18.6766 9.56413 19 10.7712 19 12C19 13.2288 18.6766 14.4359 18.0622 15.5C17.4478 16.5641 16.5641 17.4478 15.5 18.0622C14.4359 18.6766 13.2288 19 12 19" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M10 9L14 5L10 1" stroke="#696CFF" stroke-width="2"/>
+                                    <path d="M5.93782 15.5C5.32344 14.4359 5 13.2288 5 12C5 10.7712 5.32344 9.56413 5.93782 8.5C6.5522 7.43587 7.43587 6.5522 8.5 5.93782C9.56413 5.32344 10.7712 5 12 5" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">
+                                <svg class="cursor-pointer" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="20" height="20" fill="url(#pattern0_1_453)"/>
+                                    <defs>
+                                    <pattern id="pattern0_1_453" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_1_453" transform="scale(0.000976562)"/>
+                                    </pattern>
+                                    <image id="image0_1_453" width="1024" height="1024" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAAAAAQACAYAAAB/HSuDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAFiZJREFUeNrs2oGpgjEMhdFGsqzgOILjxiUkYO85G/xJ7Xt89BwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgN+q9AE8XzOOAeBvQCT3v/Pv/AOE+bwr+v5/OAIAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAADArjaCeGUEBBsjwP0Pzj/4/4cUXgAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAACgBEAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAACxrIyDchH9/OQLg/nP/gd+/3z9k8AIAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAAAQAIwAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAGBZGwHhygjA7z/UOALg/gOyeAEAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAEYAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAALCsjSDeGAHg/gP8/gHu5wUAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAAAgABgBAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAMCyNoJTRgCAv3/YPwC38wIAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAAAQAIwAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAGBZG8GZ8O8v+8f5x/7df/Zv/zj/+P07//fzAgAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAjAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAYFkbwanw7x/7t3/fD+4/7N/9j/3D/bwAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAjAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAABY1kYQr4zA/iHUGIH9u/99Pzj/JPECAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAEACMAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAEAAAAAAAAQAAAAAQAAAAAAAB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"/>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">
+                                <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 15L10 12" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M14 15L14 12" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M3 7H21V7C20.0681 7 19.6022 7 19.2346 7.15224C18.7446 7.35523 18.3552 7.74458 18.1522 8.23463C18 8.60218 18 9.06812 18 10V16C18 17.8856 18 18.8284 17.4142 19.4142C16.8284 20 15.8856 20 14 20H10C8.11438 20 7.17157 20 6.58579 19.4142C6 18.8284 6 17.8856 6 16V10C6 9.06812 6 8.60218 5.84776 8.23463C5.64477 7.74458 5.25542 7.35523 4.76537 7.15224C4.39782 7 3.93188 7 3 7V7Z" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M10.0681 3.37059C10.1821 3.26427 10.4332 3.17033 10.7825 3.10332C11.1318 3.03632 11.5597 3 12 3C12.4403 3 12.8682 3.03632 13.2175 3.10332C13.5668 3.17033 13.8179 3.26427 13.9319 3.37059" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="col-2 d-xl-none d-flex align-items-center justify-content-center">
+                                <svg data-bs-toggle="modal" data-bs-target="#more" class="d-xl-none cursor-pointer"
+                                width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 5C10 5.55228 9.55229 6 9 6C8.44771 6 8 5.55228 8 5C8 4.44772 8.44771 4 9 4C9.55229 4 10 4.44772 10 5ZM10 14V8H8V14H10Z"
+                                    fill="#696CFF" />
+                            </svg>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white mb-1 border-bottom fs-12 fs-sm-10 fw-bold row mx-0 px-2 py-3 text-dark text-center">
+                            <div class="col-xl-1 col-2 d-flex align-items-center gap-sm-3 gap-1">
+                                <p class="mb-0">1-</p>
+                                <img alt="img" src="../assets/img/photo-1568602471122-7832951cc4c5.png"
+                                    class="w-35 h-35 d-block rounded-circle">
+                            </div>
+                            <div class="col-xl-1 col-3 d-flex align-items-center justify-content-center">Reza Kazemi
+                            </div>
+                            <div class="col-xl-1 col-2 d-flex align-items-center justify-content-center">
+                                <a
+                                    class="mb-0 cursor-pointer rounded-5 bg-main text-white fw-bold h-28 d-inline-flex align-items-center justify-content-center px-2">SUB</a>
+                            </div>
+                            <div class="col-xl-1 col-3 d-flex align-items-center justify-content-center"> 
+                                <div class="form-check form-switch p-0 d-flex align-items-center justify-content-center">
+                                    <input class="form-check-input mx-auto cursor-pointer w-48 w-sm-37 h-19 h-sm-15" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                  </div>
+                            </div>
+                            <div class="col-3 d-xl-flex d-none align-items-center justify-content-center"> 
+                             <div class="h-19 w-100 rounded-pill bg-gray position-relative"> 
+                              <div class="h-100 bg-main shadow w-75 rounded-pill me-auto"></div>
+                              <p class="mb-0 text-white fw-bold fs-10 position-absolute z-10 start-0 top-0 bottom-0 mt-2px ms-3">200 گیگابایت</p>
+                             </div>
+                            </div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">
+                                <svg class="cursor-pointer" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1208 6.96758L15.9168 5.17157C16.462 4.62632 16.7346 4.3537 16.8804 4.0596C17.1577 3.50005 17.1577 2.8431 16.8804 2.28354C16.7346 1.98945 16.462 1.71682 15.9168 1.17157C15.3715 0.626323 15.0989 0.353698 14.8048 0.207962C14.2452 -0.0693207 13.5883 -0.0693207 13.0287 0.207962C12.7346 0.353698 12.462 0.626323 11.9168 1.17157L10.0981 2.99023C11.062 4.64083 12.4481 6.01639 14.1208 6.96758ZM8.64365 4.44469L1.77314 11.3152C1.34808 11.7403 1.13555 11.9528 0.995818 12.2139C0.856084 12.475 0.797138 12.7697 0.679248 13.3592L0.0638519 16.4361C-0.00267025 16.7687 -0.0359313 16.9351 0.0586767 17.0297C0.153285 17.1243 0.31959 17.091 0.6522 17.0245L3.72918 16.4091C4.31863 16.2912 4.61336 16.2323 4.87446 16.0925C5.13555 15.9528 5.34808 15.7403 5.77315 15.3152L12.6625 8.42579C11.0409 7.41014 9.66919 6.04785 8.64365 4.44469Z" fill="#696CFF"/>
+                                </svg>
+                            </div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">
+                                <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 5C16.9045 5 17.6067 5 18.1111 5.33706C18.3295 5.48298 18.517 5.67048 18.6629 5.88886C19 6.39331 19 7.09554 19 8.5V18C19 19.8856 19 20.8284 18.4142 21.4142C17.8284 22 16.8856 22 15 22H9C7.11438 22 6.17157 22 5.58579 21.4142C5 20.8284 5 19.8856 5 18V8.5C5 7.09554 5 6.39331 5.33706 5.88886C5.48298 5.67048 5.67048 5.48298 5.88886 5.33706C6.39331 5 7.09554 5 8.5 5" stroke="#696CFF" stroke-width="2"/>
+                                    <path d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5C15 6.10457 14.1046 7 13 7H11C9.89543 7 9 6.10457 9 5Z" stroke="#696CFF" stroke-width="2"/>
+                                    <path d="M9 12L15 12" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M9 16L13 16" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">
+                                <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 15L10 19L14 23" stroke="#696CFF" stroke-width="2"/>
+                                    <path d="M18.0622 8.5C18.6766 9.56413 19 10.7712 19 12C19 13.2288 18.6766 14.4359 18.0622 15.5C17.4478 16.5641 16.5641 17.4478 15.5 18.0622C14.4359 18.6766 13.2288 19 12 19" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M10 9L14 5L10 1" stroke="#696CFF" stroke-width="2"/>
+                                    <path d="M5.93782 15.5C5.32344 14.4359 5 13.2288 5 12C5 10.7712 5.32344 9.56413 5.93782 8.5C6.5522 7.43587 7.43587 6.5522 8.5 5.93782C9.56413 5.32344 10.7712 5 12 5" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">
+                                <svg class="cursor-pointer" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="20" height="20" fill="url(#pattern0_1_453)"/>
+                                    <defs>
+                                    <pattern id="pattern0_1_453" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_1_453" transform="scale(0.000976562)"/>
+                                    </pattern>
+                                    <image id="image0_1_453" width="1024" height="1024" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAAAAAQACAYAAAB/HSuDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAFiZJREFUeNrs2oGpgjEMhdFGsqzgOILjxiUkYO85G/xJ7Xt89BwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgN+q9AE8XzOOAeBvQCT3v/Pv/AOE+bwr+v5/OAIAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAADArjaCeGUEBBsjwP0Pzj/4/4cUXgAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAACgBEAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAACxrIyDchH9/OQLg/nP/gd+/3z9k8AIAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAAAQAIwAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAGBZGwHhygjA7z/UOALg/gOyeAEAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAEYAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAALCsjSDeGAHg/gP8/gHu5wUAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAAAgABgBAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAMCyNoJTRgCAv3/YPwC38wIAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAAAQAIwAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAGBZG8GZ8O8v+8f5x/7df/Zv/zj/+P07//fzAgAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAjAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAYFkbwanw7x/7t3/fD+4/7N/9j/3D/bwAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAjAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAABY1kYQr4zA/iHUGIH9u/99Pzj/JPECAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAEACMAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAEAAAAAAAAQAAAAAQAAAAAAAB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"/>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">
+                                <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 15L10 12" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M14 15L14 12" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M3 7H21V7C20.0681 7 19.6022 7 19.2346 7.15224C18.7446 7.35523 18.3552 7.74458 18.1522 8.23463C18 8.60218 18 9.06812 18 10V16C18 17.8856 18 18.8284 17.4142 19.4142C16.8284 20 15.8856 20 14 20H10C8.11438 20 7.17157 20 6.58579 19.4142C6 18.8284 6 17.8856 6 16V10C6 9.06812 6 8.60218 5.84776 8.23463C5.64477 7.74458 5.25542 7.35523 4.76537 7.15224C4.39782 7 3.93188 7 3 7V7Z" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M10.0681 3.37059C10.1821 3.26427 10.4332 3.17033 10.7825 3.10332C11.1318 3.03632 11.5597 3 12 3C12.4403 3 12.8682 3.03632 13.2175 3.10332C13.5668 3.17033 13.8179 3.26427 13.9319 3.37059" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="col-2 d-xl-none d-flex align-items-center justify-content-center">
+                                <svg data-bs-toggle="modal" data-bs-target="#more" class="d-xl-none cursor-pointer"
+                                width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 5C10 5.55228 9.55229 6 9 6C8.44771 6 8 5.55228 8 5C8 4.44772 8.44771 4 9 4C9.55229 4 10 4.44772 10 5ZM10 14V8H8V14H10Z"
+                                    fill="#696CFF" />
+                            </svg>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white mb-1 border-bottom fs-12 fs-sm-10 fw-bold row mx-0 px-2 py-3 text-dark text-center">
+                            <div class="col-xl-1 col-2 d-flex align-items-center gap-sm-3 gap-1">
+                                <p class="mb-0">1-</p>
+                                <img alt="img" src="../assets/img/photo-1568602471122-7832951cc4c5.png"
+                                    class="w-35 h-35 d-block rounded-circle">
+                            </div>
+                            <div class="col-xl-1 col-3 d-flex align-items-center justify-content-center">Reza Kazemi
+                            </div>
+                            <div class="col-xl-1 col-2 d-flex align-items-center justify-content-center">
+                                <a
+                                    class="mb-0 cursor-pointer rounded-5 bg-main text-white fw-bold h-28 d-inline-flex align-items-center justify-content-center px-2">SUB</a>
+                            </div>
+                            <div class="col-xl-1 col-3 d-flex align-items-center justify-content-center"> 
+                                <div class="form-check form-switch p-0 d-flex align-items-center justify-content-center">
+                                    <input class="form-check-input mx-auto cursor-pointer w-48 w-sm-37 h-19 h-sm-15" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                  </div>
+                            </div>
+                            <div class="col-3 d-xl-flex d-none align-items-center justify-content-center"> 
+                             <div class="h-19 w-100 rounded-pill bg-gray position-relative"> 
+                              <div class="h-100 bg-main shadow w-75 rounded-pill me-auto"></div>
+                              <p class="mb-0 text-white fw-bold fs-10 position-absolute z-10 start-0 top-0 bottom-0 mt-2px ms-3">200 گیگابایت</p>
+                             </div>
+                            </div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">
+                                <svg class="cursor-pointer" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1208 6.96758L15.9168 5.17157C16.462 4.62632 16.7346 4.3537 16.8804 4.0596C17.1577 3.50005 17.1577 2.8431 16.8804 2.28354C16.7346 1.98945 16.462 1.71682 15.9168 1.17157C15.3715 0.626323 15.0989 0.353698 14.8048 0.207962C14.2452 -0.0693207 13.5883 -0.0693207 13.0287 0.207962C12.7346 0.353698 12.462 0.626323 11.9168 1.17157L10.0981 2.99023C11.062 4.64083 12.4481 6.01639 14.1208 6.96758ZM8.64365 4.44469L1.77314 11.3152C1.34808 11.7403 1.13555 11.9528 0.995818 12.2139C0.856084 12.475 0.797138 12.7697 0.679248 13.3592L0.0638519 16.4361C-0.00267025 16.7687 -0.0359313 16.9351 0.0586767 17.0297C0.153285 17.1243 0.31959 17.091 0.6522 17.0245L3.72918 16.4091C4.31863 16.2912 4.61336 16.2323 4.87446 16.0925C5.13555 15.9528 5.34808 15.7403 5.77315 15.3152L12.6625 8.42579C11.0409 7.41014 9.66919 6.04785 8.64365 4.44469Z" fill="#696CFF"/>
+                                </svg>
+                            </div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">
+                                <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 5C16.9045 5 17.6067 5 18.1111 5.33706C18.3295 5.48298 18.517 5.67048 18.6629 5.88886C19 6.39331 19 7.09554 19 8.5V18C19 19.8856 19 20.8284 18.4142 21.4142C17.8284 22 16.8856 22 15 22H9C7.11438 22 6.17157 22 5.58579 21.4142C5 20.8284 5 19.8856 5 18V8.5C5 7.09554 5 6.39331 5.33706 5.88886C5.48298 5.67048 5.67048 5.48298 5.88886 5.33706C6.39331 5 7.09554 5 8.5 5" stroke="#696CFF" stroke-width="2"/>
+                                    <path d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5C15 6.10457 14.1046 7 13 7H11C9.89543 7 9 6.10457 9 5Z" stroke="#696CFF" stroke-width="2"/>
+                                    <path d="M9 12L15 12" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M9 16L13 16" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">
+                                <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 15L10 19L14 23" stroke="#696CFF" stroke-width="2"/>
+                                    <path d="M18.0622 8.5C18.6766 9.56413 19 10.7712 19 12C19 13.2288 18.6766 14.4359 18.0622 15.5C17.4478 16.5641 16.5641 17.4478 15.5 18.0622C14.4359 18.6766 13.2288 19 12 19" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M10 9L14 5L10 1" stroke="#696CFF" stroke-width="2"/>
+                                    <path d="M5.93782 15.5C5.32344 14.4359 5 13.2288 5 12C5 10.7712 5.32344 9.56413 5.93782 8.5C6.5522 7.43587 7.43587 6.5522 8.5 5.93782C9.56413 5.32344 10.7712 5 12 5" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">
+                                <svg class="cursor-pointer" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="20" height="20" fill="url(#pattern0_1_453)"/>
+                                    <defs>
+                                    <pattern id="pattern0_1_453" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_1_453" transform="scale(0.000976562)"/>
+                                    </pattern>
+                                    <image id="image0_1_453" width="1024" height="1024" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAAAAAQACAYAAAB/HSuDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAFiZJREFUeNrs2oGpgjEMhdFGsqzgOILjxiUkYO85G/xJ7Xt89BwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgN+q9AE8XzOOAeBvQCT3v/Pv/AOE+bwr+v5/OAIAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAADArjaCeGUEBBsjwP0Pzj/4/4cUXgAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAACgBEAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAACxrIyDchH9/OQLg/nP/gd+/3z9k8AIAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAAAQAIwAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAGBZGwHhygjA7z/UOALg/gOyeAEAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAEYAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAALCsjSDeGAHg/gP8/gHu5wUAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAAAgABgBAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAMCyNoJTRgCAv3/YPwC38wIAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAAAQAIwAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAGBZG8GZ8O8v+8f5x/7df/Zv/zj/+P07//fzAgAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAjAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAYFkbwanw7x/7t3/fD+4/7N/9j/3D/bwAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAjAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAABY1kYQr4zA/iHUGIH9u/99Pzj/JPECAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAEACMAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAEAAAAAAAAQAAAAAQAAAAAAAB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"/>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">
+                                <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 15L10 12" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M14 15L14 12" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M3 7H21V7C20.0681 7 19.6022 7 19.2346 7.15224C18.7446 7.35523 18.3552 7.74458 18.1522 8.23463C18 8.60218 18 9.06812 18 10V16C18 17.8856 18 18.8284 17.4142 19.4142C16.8284 20 15.8856 20 14 20H10C8.11438 20 7.17157 20 6.58579 19.4142C6 18.8284 6 17.8856 6 16V10C6 9.06812 6 8.60218 5.84776 8.23463C5.64477 7.74458 5.25542 7.35523 4.76537 7.15224C4.39782 7 3.93188 7 3 7V7Z" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M10.0681 3.37059C10.1821 3.26427 10.4332 3.17033 10.7825 3.10332C11.1318 3.03632 11.5597 3 12 3C12.4403 3 12.8682 3.03632 13.2175 3.10332C13.5668 3.17033 13.8179 3.26427 13.9319 3.37059" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="col-2 d-xl-none d-flex align-items-center justify-content-center">
+                                <svg data-bs-toggle="modal" data-bs-target="#more" class="d-xl-none cursor-pointer"
+                                width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 5C10 5.55228 9.55229 6 9 6C8.44771 6 8 5.55228 8 5C8 4.44772 8.44771 4 9 4C9.55229 4 10 4.44772 10 5ZM10 14V8H8V14H10Z"
+                                    fill="#696CFF" />
+                            </svg>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white mb-1 border-bottom fs-12 fs-sm-10 fw-bold row mx-0 px-2 py-3 text-dark text-center">
+                            <div class="col-xl-1 col-2 d-flex align-items-center gap-sm-3 gap-1">
+                                <p class="mb-0">1-</p>
+                                <img alt="img" src="../assets/img/photo-1568602471122-7832951cc4c5.png"
+                                    class="w-35 h-35 d-block rounded-circle">
+                            </div>
+                            <div class="col-xl-1 col-3 d-flex align-items-center justify-content-center">Reza Kazemi
+                            </div>
+                            <div class="col-xl-1 col-2 d-flex align-items-center justify-content-center">
+                                <a
+                                    class="mb-0 cursor-pointer rounded-5 bg-main text-white fw-bold h-28 d-inline-flex align-items-center justify-content-center px-2">SUB</a>
+                            </div>
+                            <div class="col-xl-1 col-3 d-flex align-items-center justify-content-center"> 
+                                <div class="form-check form-switch p-0 d-flex align-items-center justify-content-center">
+                                    <input class="form-check-input mx-auto cursor-pointer w-48 w-sm-37 h-19 h-sm-15" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                  </div>
+                            </div>
+                            <div class="col-3 d-xl-flex d-none align-items-center justify-content-center"> 
+                             <div class="h-19 w-100 rounded-pill bg-gray position-relative"> 
+                              <div class="h-100 bg-main shadow w-75 rounded-pill me-auto"></div>
+                              <p class="mb-0 text-white fw-bold fs-10 position-absolute z-10 start-0 top-0 bottom-0 mt-2px ms-3">200 گیگابایت</p>
+                             </div>
+                            </div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">
+                                <svg class="cursor-pointer" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1208 6.96758L15.9168 5.17157C16.462 4.62632 16.7346 4.3537 16.8804 4.0596C17.1577 3.50005 17.1577 2.8431 16.8804 2.28354C16.7346 1.98945 16.462 1.71682 15.9168 1.17157C15.3715 0.626323 15.0989 0.353698 14.8048 0.207962C14.2452 -0.0693207 13.5883 -0.0693207 13.0287 0.207962C12.7346 0.353698 12.462 0.626323 11.9168 1.17157L10.0981 2.99023C11.062 4.64083 12.4481 6.01639 14.1208 6.96758ZM8.64365 4.44469L1.77314 11.3152C1.34808 11.7403 1.13555 11.9528 0.995818 12.2139C0.856084 12.475 0.797138 12.7697 0.679248 13.3592L0.0638519 16.4361C-0.00267025 16.7687 -0.0359313 16.9351 0.0586767 17.0297C0.153285 17.1243 0.31959 17.091 0.6522 17.0245L3.72918 16.4091C4.31863 16.2912 4.61336 16.2323 4.87446 16.0925C5.13555 15.9528 5.34808 15.7403 5.77315 15.3152L12.6625 8.42579C11.0409 7.41014 9.66919 6.04785 8.64365 4.44469Z" fill="#696CFF"/>
+                                </svg>
+                            </div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">
+                                <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 5C16.9045 5 17.6067 5 18.1111 5.33706C18.3295 5.48298 18.517 5.67048 18.6629 5.88886C19 6.39331 19 7.09554 19 8.5V18C19 19.8856 19 20.8284 18.4142 21.4142C17.8284 22 16.8856 22 15 22H9C7.11438 22 6.17157 22 5.58579 21.4142C5 20.8284 5 19.8856 5 18V8.5C5 7.09554 5 6.39331 5.33706 5.88886C5.48298 5.67048 5.67048 5.48298 5.88886 5.33706C6.39331 5 7.09554 5 8.5 5" stroke="#696CFF" stroke-width="2"/>
+                                    <path d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5C15 6.10457 14.1046 7 13 7H11C9.89543 7 9 6.10457 9 5Z" stroke="#696CFF" stroke-width="2"/>
+                                    <path d="M9 12L15 12" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M9 16L13 16" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">
+                                <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 15L10 19L14 23" stroke="#696CFF" stroke-width="2"/>
+                                    <path d="M18.0622 8.5C18.6766 9.56413 19 10.7712 19 12C19 13.2288 18.6766 14.4359 18.0622 15.5C17.4478 16.5641 16.5641 17.4478 15.5 18.0622C14.4359 18.6766 13.2288 19 12 19" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M10 9L14 5L10 1" stroke="#696CFF" stroke-width="2"/>
+                                    <path d="M5.93782 15.5C5.32344 14.4359 5 13.2288 5 12C5 10.7712 5.32344 9.56413 5.93782 8.5C6.5522 7.43587 7.43587 6.5522 8.5 5.93782C9.56413 5.32344 10.7712 5 12 5" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">
+                                <svg class="cursor-pointer" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="20" height="20" fill="url(#pattern0_1_453)"/>
+                                    <defs>
+                                    <pattern id="pattern0_1_453" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_1_453" transform="scale(0.000976562)"/>
+                                    </pattern>
+                                    <image id="image0_1_453" width="1024" height="1024" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAAAAAQACAYAAAB/HSuDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAFiZJREFUeNrs2oGpgjEMhdFGsqzgOILjxiUkYO85G/xJ7Xt89BwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgN+q9AE8XzOOAeBvQCT3v/Pv/AOE+bwr+v5/OAIAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAADArjaCeGUEBBsjwP0Pzj/4/4cUXgAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAACgBEAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAACxrIyDchH9/OQLg/nP/gd+/3z9k8AIAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAAAQAIwAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAGBZGwHhygjA7z/UOALg/gOyeAEAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAEYAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAALCsjSDeGAHg/gP8/gHu5wUAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAAAgABgBAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAMCyNoJTRgCAv3/YPwC38wIAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAAAQAIwAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAGBZG8GZ8O8v+8f5x/7df/Zv/zj/+P07//fzAgAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAjAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAYFkbwanw7x/7t3/fD+4/7N/9j/3D/bwAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAjAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAABY1kYQr4zA/iHUGIH9u/99Pzj/JPECAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAEACMAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAEAAAAAAAAQAAAAAQAAAAAAAB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"/>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">
+                                <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 15L10 12" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M14 15L14 12" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M3 7H21V7C20.0681 7 19.6022 7 19.2346 7.15224C18.7446 7.35523 18.3552 7.74458 18.1522 8.23463C18 8.60218 18 9.06812 18 10V16C18 17.8856 18 18.8284 17.4142 19.4142C16.8284 20 15.8856 20 14 20H10C8.11438 20 7.17157 20 6.58579 19.4142C6 18.8284 6 17.8856 6 16V10C6 9.06812 6 8.60218 5.84776 8.23463C5.64477 7.74458 5.25542 7.35523 4.76537 7.15224C4.39782 7 3.93188 7 3 7V7Z" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M10.0681 3.37059C10.1821 3.26427 10.4332 3.17033 10.7825 3.10332C11.1318 3.03632 11.5597 3 12 3C12.4403 3 12.8682 3.03632 13.2175 3.10332C13.5668 3.17033 13.8179 3.26427 13.9319 3.37059" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="col-2 d-xl-none d-flex align-items-center justify-content-center">
+                                <svg data-bs-toggle="modal" data-bs-target="#more" class="d-xl-none cursor-pointer"
+                                width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 5C10 5.55228 9.55229 6 9 6C8.44771 6 8 5.55228 8 5C8 4.44772 8.44771 4 9 4C9.55229 4 10 4.44772 10 5ZM10 14V8H8V14H10Z"
+                                    fill="#696CFF" />
+                            </svg>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white mb-1 border-bottom fs-12 fs-sm-10 fw-bold row mx-0 px-2 py-3 text-dark text-center">
+                            <div class="col-xl-1 col-2 d-flex align-items-center gap-sm-3 gap-1">
+                                <p class="mb-0">1-</p>
+                                <img alt="img" src="../assets/img/photo-1568602471122-7832951cc4c5.png"
+                                    class="w-35 h-35 d-block rounded-circle">
+                            </div>
+                            <div class="col-xl-1 col-3 d-flex align-items-center justify-content-center">Reza Kazemi
+                            </div>
+                            <div class="col-xl-1 col-2 d-flex align-items-center justify-content-center">
+                                <a
+                                    class="mb-0 cursor-pointer rounded-5 bg-main text-white fw-bold h-28 d-inline-flex align-items-center justify-content-center px-2">SUB</a>
+                            </div>
+                            <div class="col-xl-1 col-3 d-flex align-items-center justify-content-center"> 
+                                <div class="form-check form-switch p-0 d-flex align-items-center justify-content-center">
+                                    <input class="form-check-input mx-auto cursor-pointer w-48 w-sm-37 h-19 h-sm-15" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                  </div>
+                            </div>
+                            <div class="col-3 d-xl-flex d-none align-items-center justify-content-center"> 
+                             <div class="h-19 w-100 rounded-pill bg-gray position-relative"> 
+                              <div class="h-100 bg-main shadow w-75 rounded-pill me-auto"></div>
+                              <p class="mb-0 text-white fw-bold fs-10 position-absolute z-10 start-0 top-0 bottom-0 mt-2px ms-3">200 گیگابایت</p>
+                             </div>
+                            </div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">
+                                <svg class="cursor-pointer" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1208 6.96758L15.9168 5.17157C16.462 4.62632 16.7346 4.3537 16.8804 4.0596C17.1577 3.50005 17.1577 2.8431 16.8804 2.28354C16.7346 1.98945 16.462 1.71682 15.9168 1.17157C15.3715 0.626323 15.0989 0.353698 14.8048 0.207962C14.2452 -0.0693207 13.5883 -0.0693207 13.0287 0.207962C12.7346 0.353698 12.462 0.626323 11.9168 1.17157L10.0981 2.99023C11.062 4.64083 12.4481 6.01639 14.1208 6.96758ZM8.64365 4.44469L1.77314 11.3152C1.34808 11.7403 1.13555 11.9528 0.995818 12.2139C0.856084 12.475 0.797138 12.7697 0.679248 13.3592L0.0638519 16.4361C-0.00267025 16.7687 -0.0359313 16.9351 0.0586767 17.0297C0.153285 17.1243 0.31959 17.091 0.6522 17.0245L3.72918 16.4091C4.31863 16.2912 4.61336 16.2323 4.87446 16.0925C5.13555 15.9528 5.34808 15.7403 5.77315 15.3152L12.6625 8.42579C11.0409 7.41014 9.66919 6.04785 8.64365 4.44469Z" fill="#696CFF"/>
+                                </svg>
+                            </div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">
+                                <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 5C16.9045 5 17.6067 5 18.1111 5.33706C18.3295 5.48298 18.517 5.67048 18.6629 5.88886C19 6.39331 19 7.09554 19 8.5V18C19 19.8856 19 20.8284 18.4142 21.4142C17.8284 22 16.8856 22 15 22H9C7.11438 22 6.17157 22 5.58579 21.4142C5 20.8284 5 19.8856 5 18V8.5C5 7.09554 5 6.39331 5.33706 5.88886C5.48298 5.67048 5.67048 5.48298 5.88886 5.33706C6.39331 5 7.09554 5 8.5 5" stroke="#696CFF" stroke-width="2"/>
+                                    <path d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5C15 6.10457 14.1046 7 13 7H11C9.89543 7 9 6.10457 9 5Z" stroke="#696CFF" stroke-width="2"/>
+                                    <path d="M9 12L15 12" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M9 16L13 16" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">
+                                <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 15L10 19L14 23" stroke="#696CFF" stroke-width="2"/>
+                                    <path d="M18.0622 8.5C18.6766 9.56413 19 10.7712 19 12C19 13.2288 18.6766 14.4359 18.0622 15.5C17.4478 16.5641 16.5641 17.4478 15.5 18.0622C14.4359 18.6766 13.2288 19 12 19" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M10 9L14 5L10 1" stroke="#696CFF" stroke-width="2"/>
+                                    <path d="M5.93782 15.5C5.32344 14.4359 5 13.2288 5 12C5 10.7712 5.32344 9.56413 5.93782 8.5C6.5522 7.43587 7.43587 6.5522 8.5 5.93782C9.56413 5.32344 10.7712 5 12 5" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">
+                                <svg class="cursor-pointer" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="20" height="20" fill="url(#pattern0_1_453)"/>
+                                    <defs>
+                                    <pattern id="pattern0_1_453" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_1_453" transform="scale(0.000976562)"/>
+                                    </pattern>
+                                    <image id="image0_1_453" width="1024" height="1024" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAAAAAQACAYAAAB/HSuDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAFiZJREFUeNrs2oGpgjEMhdFGsqzgOILjxiUkYO85G/xJ7Xt89BwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgN+q9AE8XzOOAeBvQCT3v/Pv/AOE+bwr+v5/OAIAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAADArjaCeGUEBBsjwP0Pzj/4/4cUXgAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAACgBEAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAACxrIyDchH9/OQLg/nP/gd+/3z9k8AIAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAAAQAIwAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAGBZGwHhygjA7z/UOALg/gOyeAEAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAEYAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAALCsjSDeGAHg/gP8/gHu5wUAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAAAgABgBAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAIAAAAAAAAgAAAAAgAAAAAAACAAAAACAAAAAAgAAAAAAACAAAAACAAAAAAAAIAAAAAMCyNoJTRgCAv3/YPwC38wIAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAAAQAIwAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAGBZG8GZ8O8v+8f5x/7df/Zv/zj/+P07//fzAgAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAjAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAYFkbwanw7x/7t3/fD+4/7N/9j/3D/bwAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAjAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAABY1kYQr4zA/iHUGIH9u/99Pzj/JPECAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAEACMAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAQAAAAAEAAAAAAAAQAAAAAQAAAAAAABAAAAABAAAAAAAAEAAAAAEAAAAAAAAQAAAAAEAAAAAAAAQAAAAAQAAAAAAAB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"/>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="col-1 d-xl-flex d-none align-items-center justify-content-center">
+                                <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 15L10 12" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M14 15L14 12" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M3 7H21V7C20.0681 7 19.6022 7 19.2346 7.15224C18.7446 7.35523 18.3552 7.74458 18.1522 8.23463C18 8.60218 18 9.06812 18 10V16C18 17.8856 18 18.8284 17.4142 19.4142C16.8284 20 15.8856 20 14 20H10C8.11438 20 7.17157 20 6.58579 19.4142C6 18.8284 6 17.8856 6 16V10C6 9.06812 6 8.60218 5.84776 8.23463C5.64477 7.74458 5.25542 7.35523 4.76537 7.15224C4.39782 7 3.93188 7 3 7V7Z" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M10.0681 3.37059C10.1821 3.26427 10.4332 3.17033 10.7825 3.10332C11.1318 3.03632 11.5597 3 12 3C12.4403 3 12.8682 3.03632 13.2175 3.10332C13.5668 3.17033 13.8179 3.26427 13.9319 3.37059" stroke="#696CFF" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="col-2 d-xl-none d-flex align-items-center justify-content-center">
+                                <svg data-bs-toggle="modal" data-bs-target="#more" class="d-xl-none cursor-pointer"
+                                width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 5C10 5.55228 9.55229 6 9 6C8.44771 6 8 5.55228 8 5C8 4.44772 8.44771 4 9 4C9.55229 4 10 4.44772 10 5ZM10 14V8H8V14H10Z"
+                                    fill="#696CFF" />
+                            </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../assets/js/userPannel.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
