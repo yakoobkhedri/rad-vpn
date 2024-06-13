@@ -208,6 +208,9 @@ body {
 }
 
 /* height */
+.h-10 {
+    height: 10px !important;
+}
 .h-16 {
     height: 16px !important;
 }
