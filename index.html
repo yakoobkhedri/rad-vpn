@@ -13,6 +13,23 @@
 
 <body>
 
+  <!-- educate Modal -->
+<div class="modal fade" id="educate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body border-0">
+        <video poster="assets/img/banner.png" class="w-100 d-block" height="300" controls>
+          <source src="assets/img/64ad88885b273.mp4" type="video/mp4">
+        </video> 
+      </div>
+    </div>
+  </div>
+</div>
+
+
     <!-- support chat -->
     <a
     class="position-fixed bottom-0 end-0 m-sm-5 m-4 z-50 bg-white rounded-circle overflow-hidden shadow-main">
@@ -44,7 +61,7 @@
           <li class="h-100 h-lg-auto "><a class="active">صفحه اصلی</a></li>
           <li class="h-100 h-lg-auto "><a>خرید سرویس</a></li>
           <li class="h-100 h-lg-auto "><a>تست رایگان</a></li>
-          <li class="h-100 h-lg-auto "><a>آموزش استفاده</a></li>
+          <li data-bs-toggle="modal" data-bs-target="#educate" class="h-100 h-lg-auto "><a>آموزش استفاده</a></li>
           <li class="h-100 h-lg-auto "><a>پشتیبانی</a></li>
         </ul>
         <a
